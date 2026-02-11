@@ -515,6 +515,267 @@ Enjoy exclusive welcome offers, free spins, and a wide range of slots and live d
         </table>
     </div>
 
+<h2>More Casino Games</h2>
+
+<div class="sp-more-review-container">
+        <div class="sp-more-review-card">
+            <div class="sp-more-review-header">
+                <img class="sp-more-review-logo" src="https://via.placeholder.com/40?text=Rich" alt="Rich Casino Logo">
+                <h3 class="sp-more-review-name">Rich Casino</h3>
+            </div>
+            <div class="sp-more-review-comment-count">3</div>
+            <div class="sp-more-review-rating">
+                <span class="sp-more-review-label">Cashout speed</span>
+                <span class="sp-more-review-stars">★★★★☆</span>
+                <span class="sp-more-review-score">4.6</span>
+            </div>
+            <div class="sp-more-review-rating">
+                <span class="sp-more-review-label">Bonuses & Offers</span>
+                <span class="sp-more-review-stars">★★★★☆</span>
+                <span class="sp-more-review-score">4.6</span>
+            </div>
+            <div class="sp-more-review-rating">
+                <span class="sp-more-review-label">Security</span>
+                <span class="sp-more-review-stars">★★★★☆</span>
+                <span class="sp-more-review-score">4.5</span>
+            </div>
+            <div class="sp-more-review-rating">
+                <span class="sp-more-review-label">Software & Games</span>
+                <span class="sp-more-review-stars">★★★★☆</span>
+                <span class="sp-more-review-score">4.8</span>
+            </div>
+            <div class="sp-more-review-rating">
+                <span class="sp-more-review-label">Support</span>
+                <span class="sp-more-review-stars">★★★★☆</span>
+                <span class="sp-more-review-score">4.8</span>
+            </div>
+            <div class="sp-more-review-buttons">
+                <button class="sp-more-review-review-btn">? REVIEW</button>
+                <button class="sp-more-review-play-btn">
+                    <span class="sp-more-review-play-icon">▶</span> PLAY NOW
+                </button>
+            </div>
+        </div>
+        <div class="sp-more-review-card">
+            <div class="sp-more-review-header">
+                <img class="sp-more-review-logo" src="https://via.placeholder.com/40?text=Sky" alt="Skycrown Casino Logo">
+                <h3 class="sp-more-review-name">Skycrown Casino</h3>
+            </div>
+            <div class="sp-more-review-comment-count">10</div>
+            <div class="sp-more-review-rating">
+                <span class="sp-more-review-label">Cashout speed</span>
+                <span class="sp-more-review-stars">★★★★☆</span>
+                <span class="sp-more-review-score">4.7</span>
+            </div>
+            <div class="sp-more-review-rating">
+                <span class="sp-more-review-label">Bonuses & Offers</span>
+                <span class="sp-more-review-stars">★★★★☆</span>
+                <span class="sp-more-review-score">4.7</span>
+            </div>
+            <div class="sp-more-review-rating">
+                <span class="sp-more-review-label">Security</span>
+                <span class="sp-more-review-stars">★★★★☆</span>
+                <span class="sp-more-review-score">4.9</span>
+            </div>
+            <div class="sp-more-review-rating">
+                <span class="sp-more-review-label">Software & Games</span>
+                <span class="sp-more-review-stars">★★★★☆</span>
+                <span class="sp-more-review-score">4.7</span>
+            </div>
+            <div class="sp-more-review-rating">
+                <span class="sp-more-review-label">Support</span>
+                <span class="sp-more-review-stars">★★★★☆</span>
+                <span class="sp-more-review-score">4.6</span>
+            </div>
+            <div class="sp-more-review-buttons">
+                <button class="sp-more-review-review-btn">? REVIEW</button>
+                <button class="sp-more-review-play-btn">
+                    <span class="sp-more-review-play-icon">▶</span> PLAY NOW
+                </button>
+            </div>
+        </div>
+        <div class="sp-more-review-card">
+            <div class="sp-more-review-header">
+                <img class="sp-more-review-logo" src="https://via.placeholder.com/40?text=Neo" alt="NeoSpin Casino Logo">
+                <h3 class="sp-more-review-name">NeoSpin Casino</h3>
+            </div>
+            <div class="sp-more-review-comment-count">2</div>
+            <div class="sp-more-review-rating">
+                <span class="sp-more-review-label">Cashout speed</span>
+                <span class="sp-more-review-stars">★★★★☆</span>
+                <span class="sp-more-review-score">4.5</span>
+            </div>
+            <div class="sp-more-review-rating">
+                <span class="sp-more-review-label">Bonuses & Offers</span>
+                <span class="sp-more-review-stars">★★★★☆</span>
+                <span class="sp-more-review-score">4.6</span>
+            </div>
+            <div class="sp-more-review-rating">
+                <span class="sp-more-review-label">Security</span>
+                <span class="sp-more-review-stars">★★★★☆</span>
+                <span class="sp-more-review-score">4.6</span>
+            </div>
+            <div class="sp-more-review-rating">
+                <span class="sp-more-review-label">Software & Games</span>
+                <span class="sp-more-review-stars">★★★★☆</span>
+                <span class="sp-more-review-score">4.7</span>
+            </div>
+            <div class="sp-more-review-rating">
+                <span class="sp-more-review-label">Support</span>
+                <span class="sp-more-review-stars">★★★★☆</span>
+                <span class="sp-more-review-score">4.7</span>
+            </div>
+            <div class="sp-more-review-buttons">
+                <button class="sp-more-review-review-btn">? REVIEW</button>
+                <button class="sp-more-review-play-btn">
+                    <span class="sp-more-review-play-icon">▶</span> PLAY NOW
+                </button>
+            </div>
+        </div>
+        <div class="sp-more-review-card">
+            <div class="sp-more-review-header">
+                <img class="sp-more-review-logo" src="https://via.placeholder.com/40?text=Neon" alt="Neon54 Casino Logo">
+                <h3 class="sp-more-review-name">Neon54 Casino</h3>
+            </div>
+            <div class="sp-more-review-comment-count">1</div>
+            <div class="sp-more-review-rating">
+                <span class="sp-more-review-label">Cashout speed</span>
+                <span class="sp-more-review-stars">★★★★☆</span>
+                <span class="sp-more-review-score">4.5</span>
+            </div>
+            <div class="sp-more-review-rating">
+                <span class="sp-more-review-label">Bonuses & Offers</span>
+                <span class="sp-more-review-stars">★★★★☆</span>
+                <span class="sp-more-review-score">4.6</span>
+            </div>
+            <div class="sp-more-review-rating">
+                <span class="sp-more-review-label">Security</span>
+                <span class="sp-more-review-stars">★★★★☆</span>
+                <span class="sp-more-review-score">4.6</span>
+            </div>
+            <div class="sp-more-review-rating">
+                <span class="sp-more-review-label">Software & Games</span>
+                <span class="sp-more-review-stars">★★★★☆</span>
+                <span class="sp-more-review-score">4.5</span>
+            </div>
+            <div class="sp-more-review-rating">
+                <span class="sp-more-review-label">Support</span>
+                <span class="sp-more-review-stars">★★★★☆</span>
+                <span class="sp-more-review-score">4.6</span>
+            </div>
+            <div class="sp-more-review-buttons">
+                <button class="sp-more-review-review-btn">? REVIEW</button>
+                <button class="sp-more-review-play-btn">
+                    <span class="sp-more-review-play-icon">▶</span> PLAY NOW
+                </button>
+            </div>
+        </div>
+    </div>
+
+<h2>v2 Games </h2>
+
+<div class="spin-pulse-games-container">
+        
+        <div class="spin-pulse-games-card">
+            <div class="spin-pulse-games-header spin-pulse-games-theme-blue">
+                <svg class="spin-pulse-games-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#FFD700" stroke="#FFF" stroke-width="1"/>
+                    <circle cx="5" cy="5" r="2" fill="#fff" opacity="0.5"/>
+                    <circle cx="19" cy="18" r="1" fill="#fff" opacity="0.5"/>
+                </svg>
+            </div>
+            <div class="spin-pulse-games-body">
+                <div>
+                    <h3 class="spin-pulse-games-title">Star Joker</h3>
+                    <p class="spin-pulse-games-desc">
+                        <span class="spin-pulse-games-highlight">100% match bonus</span> based on first deposit of £/$/€20+. Additional bonuses.
+                    </p>
+                </div>
+                <div>
+                    <button class="spin-pulse-games-btn">Play Now</button>
+                    <div class="spin-pulse-games-footer">
+                        <span class="spin-pulse-games-link">T&Cs Apply</span><br>
+                        *New players only
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="spin-pulse-games-card">
+            <div class="spin-pulse-games-header spin-pulse-games-theme-purple">
+                <svg class="spin-pulse-games-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 16L3 5L8.5 10L12 4L15.5 10L21 5L19 16H5ZM19 19C19 19.5523 18.5523 20 18 20H6C5.44772 20 5 19.5523 5 19V17H19V19Z" fill="#FFD700" stroke="#FFF" stroke-width="1"/>
+                </svg>
+            </div>
+            <div class="spin-pulse-games-body">
+                <div>
+                    <h3 class="spin-pulse-games-title">Golden Guns</h3>
+                    <p class="spin-pulse-games-desc">
+                        <span class="spin-pulse-games-highlight">100% match bonus</span> based on first deposit of £/$/€20+. Additional bonuses.
+                    </p>
+                </div>
+                <div>
+                    <button class="spin-pulse-games-btn">Play Now</button>
+                    <div class="spin-pulse-games-footer">
+                        <span class="spin-pulse-games-link">T&Cs Apply</span><br>
+                        *New players only
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="spin-pulse-games-card">
+            <div class="spin-pulse-games-header spin-pulse-games-theme-red">
+                <svg class="spin-pulse-games-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C8 2 5 6 5 11C5 16.5 7.5 22 12 22C16.5 22 19 16.5 19 11C19 6 16 2 12 2ZM12 18C10 18 9 16 9 14H15C15 16 14 18 12 18Z" fill="#ff6b6b" stroke="#FFF" stroke-width="1"/>
+                    <path d="M5.5 11H18.5" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="spin-pulse-games-body">
+                <div>
+                    <h3 class="spin-pulse-games-title">Lucky Easter</h3>
+                    <p class="spin-pulse-games-desc">
+                        <span class="spin-pulse-games-highlight">100% match bonus</span> based on first deposit of £/$/€20+. Additional bonuses.
+                    </p>
+                </div>
+                <div>
+                    <button class="spin-pulse-games-btn">Play Now</button>
+                    <div class="spin-pulse-games-footer">
+                        <span class="spin-pulse-games-link">T&Cs Apply</span><br>
+                        *New players only
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="spin-pulse-games-card">
+            <div class="spin-pulse-games-header spin-pulse-games-theme-teal">
+                <svg class="spin-pulse-games-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="6" y="4" width="12" height="16" rx="2" fill="#4ecdc4" stroke="#FFF" stroke-width="1"/>
+                    <path d="M8 9H16" stroke="#FFF" stroke-width="2"/>
+                    <path d="M8 15H16" stroke="#FFF" stroke-width="2"/>
+                    <circle cx="12" cy="12" r="2" fill="#FFF"/>
+                </svg>
+            </div>
+            <div class="spin-pulse-games-body">
+                <div>
+                    <h3 class="spin-pulse-games-title">Aztec Idols</h3>
+                    <p class="spin-pulse-games-desc">
+                        <span class="spin-pulse-games-highlight">100% match bonus</span> based on first deposit of £/$/€20+. Additional bonuses.
+                    </p>
+                </div>
+                <div>
+                    <button class="spin-pulse-games-btn">Play Now</button>
+                    <div class="spin-pulse-games-footer">
+                        <span class="spin-pulse-games-link">T&Cs Apply</span><br>
+                        *New players only
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 
 <h2>FAQs</h2>
 <div class="spin-pulse-faqs">
