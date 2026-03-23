@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest South Africa Powerball Results & Payouts | ZA Lottery 2026</title>
+    <meta name="description" content="Check the latest ZA Powerball and Powerball Plus results, winning numbers, and prize payouts. Updated immediately after every Tuesday and Friday draw.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Smooth scrolling for anchor links */
+        html { scroll-behavior: smooth; }
+        /* Lottery ball subtle shine effect */
+        .ball-shine {
+            background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.4) 0%, transparent 60%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <div class="bg-amber-500 text-amber-950 px-4 py-2 text-sm font-semibold text-center flex items-center justify-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        Next Estimated Powerball Jackpot: R45,000,000 | Draw: Tuesday, 24 March 2026
+    </div>
+
+    <header class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-black text-white shadow-lg">ZA</div>
+                <span class="text-xl font-extrabold text-white tracking-tight">Lotto<span class="text-blue-400">Results</span></span>
+            </a>
+            <nav class="hidden md:flex gap-8 text-sm font-semibold text-slate-300">
+                <a href="#" class="text-white hover:text-blue-400 transition-colors">Powerball</a>
+                <a href="#" class="hover:text-blue-400 transition-colors">Lotto</a>
+                <a href="#" class="hover:text-blue-400 transition-colors">Daily Lotto</a>
+                <a href="#" class="hover:text-blue-400 transition-colors">Predictions</a>
+                <a href="#" class="hover:text-blue-400 transition-colors">History</a>
+            </nav>
+            <button class="md:hidden text-slate-300 hover:text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-b from-slate-900 to-slate-800 pt-12 pb-24 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">South Africa Powerball Results</h1>
+            <p class="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">Check the latest winning numbers, prize dividends, and rollover announcements for the ZA Powerball and Powerball Plus.</p>
+        </div>
+    </section>
+
+    <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 w-full -mt-16 mb-16 relative z-10">
+        
+        <div class="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden mb-10">
+            <div class="bg-blue-600 px-6 py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                    <h2 class="text-2xl font-bold text-white flex items-center gap-2">
+                        Powerball Results
+                        <span class="bg-green-500 text-green-950 text-xs font-black px-2 py-1 rounded-md uppercase tracking-wide">Verified</span>
+                    </h2>
+                    <p class="text-blue-100 text-sm mt-1">Draw Date: <strong class="text-white">Friday, 20 March 2026</strong> | Draw No: <strong class="text-white">1704</strong></p>
+                </div>
+            </div>
+
+            <div class="p-8 text-center border-b border-slate-100 bg-slate-50">
+                <p class="text-sm font-semibold text-slate-500 uppercase tracking-widest mb-6">Winning Numbers</p>
+                <div class="flex flex-wrap justify-center gap-3 md:gap-5">
+                    <div class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-blue-600 text-white font-black text-2xl flex items-center justify-center shadow-md relative overflow-hidden ring-4 ring-blue-100">
+                        <div class="absolute inset-0 ball-shine"></div>
+                        <span class="relative z-10">04</span>
+                    </div>
+                    <div class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-blue-600 text-white font-black text-2xl flex items-center justify-center shadow-md relative overflow-hidden ring-4 ring-blue-100">
+                        <div class="absolute inset-0 ball-shine"></div>
+                        <span class="relative z-10">17</span>
+                    </div>
+                    <div class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-blue-600 text-white font-black text-2xl flex items-center justify-center shadow-md relative overflow-hidden ring-4 ring-blue-100">
+                        <div class="absolute inset-0 ball-shine"></div>
+                        <span class="relative z-10">22</span>
+                    </div>
+                    <div class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-blue-600 text-white font-black text-2xl flex items-center justify-center shadow-md relative overflow-hidden ring-4 ring-blue-100">
+                        <div class="absolute inset-0 ball-shine"></div>
+                        <span class="relative z-10">36</span>
+                    </div>
+                    <div class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-blue-600 text-white font-black text-2xl flex items-center justify-center shadow-md relative overflow-hidden ring-4 ring-blue-100">
+                        <div class="absolute inset-0 ball-shine"></div>
+                        <span class="relative z-10">45</span>
+                    </div>
+                    <div class="flex items-center mx-2 text-slate-300 font-bold text-2xl">+</div>
+                    <div class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-amber-500 text-amber-950 font-black text-2xl flex items-center justify-center shadow-md relative overflow-hidden ring-4 ring-amber-100">
+                        <div class="absolute inset-0 ball-shine"></div>
+                        <span class="relative z-10">12</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-6">
+                <h3 class="text-lg font-bold text-slate-900 mb-4">Payout Breakdown</h3>
+                <div class="overflow-x-auto rounded-lg border border-slate-200">
+                    <table class="w-full text-left border-collapse">
+                        <thead class="bg-slate-100 text-sm font-semibold text-slate-700 uppercase tracking-wider">
+                            <tr>
+                                <th class="p-4 border-b border-slate-200">Division</th>
+                                <th class="p-4 border-b border-slate-200">Match</th>
+                                <th class="p-4 border-b border-slate-200 text-right">Winners</th>
+                                <th class="p-4 border-b border-slate-200 text-right">Prize (ZAR)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm divide-y divide-slate-100 text-slate-800">
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="p-4 font-medium">1</td>
+                                <td class="p-4 text-slate-500">5 Numbers + PB</td>
+                                <td class="p-4 text-right font-semibold">0</td>
+                                <td class="p-4 text-right font-bold text-slate-400">Rollover</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="p-4 font-medium">2</td>
+                                <td class="p-4 text-slate-500">5 Numbers</td>
+                                <td class="p-4 text-right font-semibold">2</td>
+                                <td class="p-4 text-right font-bold text-slate-900">R 245,670.50</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="p-4 font-medium">3</td>
+                                <td class="p-4 text-slate-500">4 Numbers + PB</td>
+                                <td class="p-4 text-right font-semibold">18</td>
+                                <td class="p-4 text-right font-bold text-slate-900">R 18,450.20</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="p-4 font-medium">4</td>
+                                <td class="p-4 text-slate-500">4 Numbers</td>
+                                <td class="p-4 text-right font-semibold">452</td>
+                                <td class="p-4 text-right font-bold text-slate-900">R 1,025.00</td>
+                            </tr>
+                            <tr class="bg-slate-50 text-center text-xs text-slate-500">
+                                <td colspan="4" class="p-2 border-y border-slate-100">Divisions 5-8 omitted for brevity</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="p-4 font-medium">9</td>
+                                <td class="p-4 text-slate-500">0 Numbers + PB</td>
+                                <td class="p-4 text-right font-semibold">145,890</td>
+                                <td class="p-4 text-right font-bold text-slate-900">R 10.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-16 space-y-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Everything You Need to Know About ZA Powerball</h2>
+                <p class="mt-4 text-slate-600 text-lg">Whether you are a seasoned player or buying your first ticket, our comprehensive guide explains how the South African Powerball works, draw times, and your odds of winning.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">How to Play</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Select 5 main numbers between 1 and 50, and 1 Powerball number from 1 to 20. A single Powerball board costs R5.00. You can pick your own numbers or use the Quick Pick option for random selections.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Draw Days & Times</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">The South African Powerball and Powerball Plus draws take place twice a week on <strong class="text-slate-800">Tuesdays and Fridays at 21:00 SAST</strong>. Ticket sales close exactly 30 minutes before the draw (20:30 SAST).</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Odds of Winning</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">The odds of winning the grand jackpot (matching all 5 numbers plus the Powerball) are 1 in 42,375,200. However, the overall odds of winning any prize in the game are an encouraging 1 in 18.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-20">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="bg-white border border-slate-200 rounded-xl p-6">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">What is Powerball Plus?</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Powerball Plus is a secondary draw that gives players a second chance to win with their existing Powerball numbers. It costs an additional R2.50 per board. The jackpot is generally lower than the main draw, but the mechanics are identical.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-xl p-6">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">How long do I have to claim my ZA Powerball winnings?</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">You have exactly 365 days from the date of the draw to claim your prize. Winnings under R2,000 can usually be claimed at participating retailers, while larger prizes require a visit to the official Ithuba regional offices.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-xl p-6">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Are South African lottery winnings taxed?</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">No. In South Africa, all National Lottery winnings, including Powerball, are completely tax-free and are paid out as a lump sum. They are considered a capital receipt by SARS.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-slate-950 text-slate-400 py-12 mt-12 border-t border-slate-900">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center font-black text-slate-300">ZA</div>
+                    <span class="text-xl font-extrabold text-white tracking-tight">Lotto<span class="text-slate-500">Results</span></span>
+                </div>
+                <div class="flex gap-6 text-sm font-semibold">
+                    <a href="#" class="hover:text-white transition-colors">About Us</a>
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Disclaimer</a>
+                    <a href="#" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 text-xs leading-relaxed text-slate-500 text-center md:text-left">
+                <p class="mb-4">
+                    <strong class="text-slate-300">Disclaimer:</strong> ZALottoResults is an independent informational website. We are not affiliated with, endorsed by, or connected to Ithuba National Lottery or the National Lotteries Commission (NLC) of South Africa. While every effort is made to ensure the accuracy of the results published, we accept no responsibility for errors or omissions. Always verify your tickets on the official National Lottery website or at an authorized retailer.
+                </p>
+                <div class="bg-slate-900 border border-slate-800 p-4 rounded-lg flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
+                    <div class="w-10 h-10 bg-red-900/30 text-red-500 rounded-full flex items-center justify-center font-black text-lg border border-red-900/50 shrink-0">18+</div>
+                    <p class="text-sm font-medium text-slate-400">Play Responsibly. Winners know when to stop. Toll-Free National Responsible Gambling Programme Helpline: <strong class="text-white">0800 006 008</strong>.</p>
+                </div>
+                <p class="mt-8 text-center">&copy; 2026 ZALottoResults. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest South Africa Powerball Plus Results & Payouts | ZA Lottery 2026</title>
+    <meta name="description" content="Check the latest ZA Powerball Plus results, winning numbers, and prize payouts. Get the Tuesday and Friday draw results instantly.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        html { scroll-behavior: smooth; }
+        .ball-shine {
+            background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.4) 0%, transparent 60%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <div class="bg-amber-500 text-amber-950 px-4 py-2 text-sm font-semibold text-center flex items-center justify-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        Next Estimated Powerball Plus Jackpot: R15,000,000 | Draw: Tuesday, 24 March 2026
+    </div>
+
+    <header class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center font-black text-white shadow-lg">ZA</div>
+                <span class="text-xl font-extrabold text-white tracking-tight">Lotto<span class="text-indigo-400">Results</span></span>
+            </a>
+            <nav class="hidden md:flex gap-8 text-sm font-semibold text-slate-300">
+                <a href="#" class="hover:text-white transition-colors">Powerball</a>
+                <a href="#" class="text-white hover:text-indigo-400 transition-colors">Powerball Plus</a>
+                <a href="#" class="hover:text-white transition-colors">Lotto</a>
+                <a href="#" class="hover:text-white transition-colors">Daily Lotto</a>
+                <a href="#" class="hover:text-white transition-colors">History</a>
+            </nav>
+            <button class="md:hidden text-slate-300 hover:text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-b from-slate-900 to-slate-800 pt-12 pb-24 px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <div class="inline-flex items-center gap-2 bg-indigo-500/20 text-indigo-300 px-4 py-1.5 rounded-full text-xs font-bold mb-6 border border-indigo-500/30 tracking-widest uppercase">
+                Second Chance Draw
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">Powerball Plus Results</h1>
+            <p class="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">Check the latest winning numbers, prize dividends, and rollover announcements for the South African Powerball Plus.</p>
+        </div>
+    </section>
+
+    <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 w-full -mt-16 mb-16 relative z-10">
+        
+        <div class="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden mb-10">
+            <div class="bg-indigo-700 px-6 py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                    <h2 class="text-2xl font-bold text-white flex items-center gap-2">
+                        Powerball Plus Results
+                        <span class="bg-green-500 text-green-950 text-xs font-black px-2 py-1 rounded-md uppercase tracking-wide">Verified</span>
+                    </h2>
+                    <p class="text-indigo-200 text-sm mt-1">Draw Date: <strong class="text-white">Friday, 20 March 2026</strong> | Draw No: <strong class="text-white">1704</strong></p>
+                </div>
+            </div>
+
+            <div class="p-8 text-center border-b border-slate-100 bg-slate-50">
+                <p class="text-sm font-semibold text-slate-500 uppercase tracking-widest mb-6">Winning Plus Numbers</p>
+                <div class="flex flex-wrap justify-center gap-3 md:gap-5">
+                    <div class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-indigo-600 text-white font-black text-2xl flex items-center justify-center shadow-md relative overflow-hidden ring-4 ring-indigo-100">
+                        <div class="absolute inset-0 ball-shine"></div>
+                        <span class="relative z-10">08</span>
+                    </div>
+                    <div class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-indigo-600 text-white font-black text-2xl flex items-center justify-center shadow-md relative overflow-hidden ring-4 ring-indigo-100">
+                        <div class="absolute inset-0 ball-shine"></div>
+                        <span class="relative z-10">14</span>
+                    </div>
+                    <div class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-indigo-600 text-white font-black text-2xl flex items-center justify-center shadow-md relative overflow-hidden ring-4 ring-indigo-100">
+                        <div class="absolute inset-0 ball-shine"></div>
+                        <span class="relative z-10">21</span>
+                    </div>
+                    <div class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-indigo-600 text-white font-black text-2xl flex items-center justify-center shadow-md relative overflow-hidden ring-4 ring-indigo-100">
+                        <div class="absolute inset-0 ball-shine"></div>
+                        <span class="relative z-10">33</span>
+                    </div>
+                    <div class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-indigo-600 text-white font-black text-2xl flex items-center justify-center shadow-md relative overflow-hidden ring-4 ring-indigo-100">
+                        <div class="absolute inset-0 ball-shine"></div>
+                        <span class="relative z-10">49</span>
+                    </div>
+                    <div class="flex items-center mx-2 text-slate-300 font-bold text-2xl">+</div>
+                    <div class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-amber-500 text-amber-950 font-black text-2xl flex items-center justify-center shadow-md relative overflow-hidden ring-4 ring-amber-100">
+                        <div class="absolute inset-0 ball-shine"></div>
+                        <span class="relative z-10">18</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-6">
+                <h3 class="text-lg font-bold text-slate-900 mb-4">Payout Breakdown (Powerball Plus)</h3>
+                <div class="overflow-x-auto rounded-lg border border-slate-200">
+                    <table class="w-full text-left border-collapse">
+                        <thead class="bg-slate-100 text-sm font-semibold text-slate-700 uppercase tracking-wider">
+                            <tr>
+                                <th class="p-4 border-b border-slate-200">Division</th>
+                                <th class="p-4 border-b border-slate-200">Match</th>
+                                <th class="p-4 border-b border-slate-200 text-right">Winners</th>
+                                <th class="p-4 border-b border-slate-200 text-right">Prize (ZAR)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm divide-y divide-slate-100 text-slate-800">
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="p-4 font-medium">1</td>
+                                <td class="p-4 text-slate-500">5 Numbers + PB</td>
+                                <td class="p-4 text-right font-semibold">1</td>
+                                <td class="p-4 text-right font-bold text-slate-900">R 12,450,000.00</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="p-4 font-medium">2</td>
+                                <td class="p-4 text-slate-500">5 Numbers</td>
+                                <td class="p-4 text-right font-semibold">3</td>
+                                <td class="p-4 text-right font-bold text-slate-900">R 110,420.50</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="p-4 font-medium">3</td>
+                                <td class="p-4 text-slate-500">4 Numbers + PB</td>
+                                <td class="p-4 text-right font-semibold">22</td>
+                                <td class="p-4 text-right font-bold text-slate-900">R 9,250.80</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="p-4 font-medium">4</td>
+                                <td class="p-4 text-slate-500">4 Numbers</td>
+                                <td class="p-4 text-right font-semibold">615</td>
+                                <td class="p-4 text-right font-bold text-slate-900">R 450.00</td>
+                            </tr>
+                            <tr class="bg-slate-50 text-center text-xs text-slate-500">
+                                <td colspan="4" class="p-2 border-y border-slate-100">Divisions 5-8 omitted for brevity</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="p-4 font-medium">9</td>
+                                <td class="p-4 text-slate-500">0 Numbers + PB</td>
+                                <td class="p-4 text-right font-semibold">121,440</td>
+                                <td class="p-4 text-right font-bold text-slate-900">R 5.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-16 space-y-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Everything You Need to Know About Powerball Plus</h2>
+                <p class="mt-4 text-slate-600 text-lg">Powerball Plus gives your numbers a second chance to win big. Learn how to enter, what it costs, and the odds of hitting the jackpot.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">How to Play & Cost</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">To play Powerball Plus, you must first enter the main Powerball draw (R5.00). You then tick the "Powerball Plus" option on your betslip for an additional <strong class="text-slate-800">R2.50 per board</strong>. The exact same numbers you chose for the main draw are entered into the Plus draw.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Draw Days & Times</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">The Powerball Plus draw takes place immediately after the main Powerball draw on <strong class="text-slate-800">Tuesdays and Fridays at 21:00 SAST</strong>. Ticket sales close at 20:30 SAST sharp on the day of the draw.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Odds & Payouts</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm">Because the mechanics are identical (5/50 + 1/20), the odds of winning the jackpot are the same as the main draw: 1 in 42,375,200. However, because tickets cost half the price, the prize payouts and jackpots are generally lower.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-20">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6">Powerball Plus FAQs</h2>
+            <div class="space-y-4">
+                <div class="bg-white border border-slate-200 rounded-xl p-6">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Can I play Powerball Plus without playing the main Powerball?</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">No. Powerball Plus is exclusively an add-on game. You must purchase a main Powerball entry first before you can opt-in to the Plus draw. The total minimum cost to play both is R7.50 per board.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-xl p-6">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Can I pick different numbers for the Plus draw?</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">No. The numbers you select for the main Powerball draw are exactly the same numbers that are entered into the Powerball Plus draw. It acts as a literal "second chance" for your chosen numbers.</p>
+                </div>
+                <div class="bg-white border border-slate-200 rounded-xl p-6">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">What happens if no one wins the Powerball Plus jackpot?</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Just like the main game, the jackpot rolls over to the next draw. It will continue to roll over and grow until a player matches all 5 numbers and the Powerball.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-slate-950 text-slate-400 py-12 mt-12 border-t border-slate-900">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center font-black text-slate-300">ZA</div>
+                    <span class="text-xl font-extrabold text-white tracking-tight">Lotto<span class="text-slate-500">Results</span></span>
+                </div>
+                <div class="flex gap-6 text-sm font-semibold">
+                    <a href="#" class="hover:text-white transition-colors">About Us</a>
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Disclaimer</a>
+                    <a href="#" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 text-xs leading-relaxed text-slate-500 text-center md:text-left">
+                <p class="mb-4">
+                    <strong class="text-slate-300">Disclaimer:</strong> ZALottoResults is an independent informational website. We are not affiliated with, endorsed by, or connected to Ithuba National Lottery or the National Lotteries Commission (NLC) of South Africa. While every effort is made to ensure the accuracy of the results published, we accept no responsibility for errors or omissions. Always verify your tickets on the official National Lottery website or at an authorized retailer.
+                </p>
+                <div class="bg-slate-900 border border-slate-800 p-4 rounded-lg flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
+                    <div class="w-10 h-10 bg-red-900/30 text-red-500 rounded-full flex items-center justify-center font-black text-lg border border-red-900/50 shrink-0">18+</div>
+                    <p class="text-sm font-medium text-slate-400">Play Responsibly. Winners know when to stop. Toll-Free National Responsible Gambling Programme Helpline: <strong class="text-white">0800 006 008</strong>.</p>
+                </div>
+                <p class="mt-8 text-center">&copy; 2026 ZALottoResults. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
