@@ -1,356 +1,534 @@
-/* Container for multiple category badges */
-.sp-single-category-container {
+<?php
+// --- SIMULATED BACKEND DATA PIPELINE ---
+// We now structure the data so JavaScript can easily consume it for dynamic updates.
+
+$pageTitle = "SA Lottery Analytics | Premium Data Dashboard";
+
+// Master Array: Contains Results AND Game-Specific Analytics
+$lotteryData = [
+    'powerball' => [
+        'id' => 'powerball',
+        'name' => 'PowerBall',
+        'date' => 'April 14, 2026',
+        'jackpot' => 'R 45,000,000',
+        'numbers' => [12, 28, 33, 41, 47],
+        'bonus' => 9,
+        'stats' => ['odd_even' => '3/2', 'high_low' => '4/1'],
+        'analytics' => [
+            'hot' => [7, 14, 23, 38, 42],
+            'cold' => [2, 11, 29, 31, 49],
+            'pairs' => ['14 & 23', '7 & 42']
+        ],
+        // Rules for the Smart Generator
+        'rules' => ['max_num' => 50, 'draw_size' => 5, 'has_bonus' => true, 'bonus_max' => 20]
+    ],
+    'powerballplus' => [
+        'id' => 'powerballplus',
+        'name' => 'PowerBall Plus',
+        'date' => 'April 14, 2026',
+        'jackpot' => 'R 22,000,000',
+        'numbers' => [5, 18, 27, 36, 44],
+        'bonus' => 14,
+        'stats' => ['odd_even' => '2/3', 'high_low' => '3/2'],
+        'analytics' => [
+            'hot' => [5, 18, 27, 36, 44],
+            'cold' => [3, 11, 20, 31, 49],
+            'pairs' => ['5 & 18', '27 & 44']
+        ],
+        'rules' => ['max_num' => 50, 'draw_size' => 5, 'has_bonus' => true, 'bonus_max' => 20]
+    ],
+    'lotto' => [
+        'id' => 'lotto',
+        'name' => 'Lotto',
+        'date' => 'April 11, 2026',
+        'jackpot' => 'R 12,500,000',
+        'numbers' => [4, 15, 23, 27, 38, 49],
+        'bonus' => 11,
+        'stats' => ['odd_even' => '4/2', 'high_low' => '3/3'],
+        'analytics' => [
+            'hot' => [4, 19, 21, 33, 41, 52],
+            'cold' => [8, 13, 25, 40, 48, 50],
+            'pairs' => ['4 & 15', '27 & 49']
+        ],
+        'rules' => ['max_num' => 52, 'draw_size' => 6, 'has_bonus' => true, 'bonus_max' => 52]
+    ],
+    'dailylotto' => [
+        'id' => 'dailylotto',
+        'name' => 'Daily Lotto',
+        'date' => 'April 13, 2026',
+        'jackpot' => 'R 450,000',
+        'numbers' => [2, 9, 18, 22, 34],
+        'bonus' => null,
+        'stats' => ['odd_even' => '2/3', 'high_low' => '1/4'],
+        'analytics' => [
+            'hot' => [2, 9, 15, 28, 34],
+            'cold' => [5, 12, 17, 21, 36],
+            'pairs' => ['2 & 9', '18 & 34']
+        ],
+        'rules' => ['max_num' => 36, 'draw_size' => 5, 'has_bonus' => false, 'bonus_max' => 0]
+    ]
+];
+
+// Encode the PHP array into JSON so JavaScript can access it seamlessly
+$jsonData = json_encode($lotteryData);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $pageTitle; ?></title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- ELEVATED MODERN UI --- */
+        :root {
+            --bg-grad: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+            --surface: rgba(255, 255, 255, 0.85);
+            --surface-solid: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --primary: #4f46e5;      /* Modern Indigo */
+            --primary-glow: rgba(79, 70, 229, 0.3);
+            --accent-hot: #ef4444;
+            --accent-cold: #0ea5e9;
+            --accent-gold: #f59e0b;
+            --border: rgba(226, 232, 240, 0.8);
+            --radius-lg: 24px;
+            --radius-md: 12px;
+            --shadow-float: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg-grad); color: var(--text-main); line-height: 1.6; min-height: 100vh; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+
+        .container { max-width: 1300px; margin: 0 auto; padding: 0 24px; }
+        
+        /* Glassmorphism Header */
+        header { 
+            background: rgba(255, 255, 255, 0.7); 
+            backdrop-filter: blur(12px); 
+            -webkit-backdrop-filter: blur(12px);
+            padding: 20px 0; 
+            border-bottom: 1px solid var(--border); 
+            position: sticky; top: 0; z-index: 100;
+        }
+        .nav-wrap { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; background: linear-gradient(90deg, var(--primary), #9333ea); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -0.5px; }
+
+        .hero { padding: 48px 0 32px; text-align: center; }
+        .hero h1 { font-size: 2.5rem; letter-spacing: -1px; margin-bottom: 12px; color: #1e293b; }
+        .hero p { color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+
+        .grid { display: grid; grid-template-columns: 2.2fr 1.2fr; gap: 21px; margin-bottom: 21px; }
+        @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+
+        /* Modern Cards */
+        .card { 
+            background: var(--surface); 
+            backdrop-filter: blur(16px);
+            border-radius: var(--radius-lg); 
+            padding: 13px; 
+            box-shadow: var(--shadow-float); 
+            border: 1px solid var(--border); 
+        }
+        
+        /* Container for the scroll fade effect */
+.tabs-wrapper {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+/* Gradient faders to show scroll exists */
+.tabs-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0;
+    width: 40px;
+    background: linear-gradient(to right, transparent, var(--bg-grad));
+    pointer-events: none;
+}
+
+.tabs {
     display: flex;
-    flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 25px;
+    background: rgba(0, 0, 0, 0.03); /* Subtle inset look */
+    padding: 6px;
+    border-radius: var(--radius-md);
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    position: relative;
+    z-index: 1;
 }
 
-/* ==========================================================================
-   sp-single Layout (Screenshot Matched)
-   ========================================================================== */
-
-/* Main Wrapper */
-.sp-single-main-wrapper {
-    max-width: 900px; /* Constrained for good readability */
-    margin: 40px auto;
-    padding: 0 20px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    color: #4a4a4a; /* Dark grey body text */
-}
-
-/* --- Header Section --- */
-.sp-single-header {
-    margin-bottom: 40px;
-}
-
-.sp-single-title {
-    color: #0d3b66; /* Deep Navy Blue */
-    font-size: 2.8rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin: 0 0 10px 0;
-}
-
-/* Breadcrumbs */
-.sp-single-breadcrumbs {
-    font-size: 0.85rem;
-    color: #888;
-    margin-bottom: 20px;
-}
-
-.sp-single-breadcrumbs a {
-    color: #888;
-    text-decoration: none;
-}
-
-.sp-single-breadcrumbs a:hover {
-    text-decoration: underline;
-}
-
-.sp-single-current-crumb {
-    color: #aaaaaa;
-}
-
-/* Teal Category Badge */
-.sp-single-category-badge {
-    display: inline-block;
-    background-color: #1594a5; /* Teal */
-    color: #ffffff;
-    padding: 8px 16px;
+.tab-btn {
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    border-radius: calc(var(--radius-md) - 4px);
     font-size: 0.9rem;
     font-weight: 600;
-    border-radius: 4px;
-    margin-bottom: 25px;
+    color: var(--text-muted);
+    transition: all 0.25s ease;
 }
 
-/* Author Box */
-.sp-single-author-box {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 30px;
+.tab-btn.active {
+    background: var(--surface-solid);
+    color: var(--primary);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transform: translateY(-1px);
 }
 
-.sp-single-author-avatar img {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
+/* Enhanced Jackpot Section */
+.jackpot-container {
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.05) 0%, rgba(147, 51, 234, 0.05) 100%);
+    padding: 24px;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(79, 70, 229, 0.1);
+    margin: 20px 0;
 }
 
-.sp-single-author-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.sp-single-author-name {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-.sp-single-author-name strong {
-    color: #333;
-}
-
-.sp-single-post-meta {
-    display: flex;
-    gap: 15px;
-    font-size: 0.85rem;
-    color: #888;
-    align-items: center;
-}
-
-.sp-single-meta-item {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.sp-single-meta-item svg {
-    color: #a0a0a0;
-}
-
-/* --- Content Section --- */
-.sp-single-featured-image {
-    margin-bottom: 30px;
-}
-
-.sp-single-img-responsive {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px;
-}
-
-.sp-single-content {
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-.sp-single-content p {
-    margin-bottom: 25px;
-}
-
-/* Matches the H2 in the screenshot */
-.sp-single-content h2 {
-    color: #0d3b66; 
-    font-size: 2rem;
+.jackpot-display {
+    font-size: 2.8rem;
     font-weight: 800;
-    margin: 40px 0 20px 0;
-    line-height: 1.3;
-}
-
-/* --- Full-Width Related Section Container --- */
-.sp-single-full-width-related {
-    width: 100%;
-    background-color: #f4f7f9; /* Light, clean "nice" background */
-    padding: 80px 0;
-    margin-top: 60px;
-    border-top: 1px solid #e1e8ed;
-}
-
-/* Centers the grid within the full-width section */
-.sp-single-related-inner {
-    max-width: 1100px; /* Wider than the article for a "discovery" feel */
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.sp-single-related-heading {
-    color: #0d3b66;
-    font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 35px;
-    text-align: center;
-}
-
-/* The Grid Logic */
-.sp-single-related-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-/* The Card Styling (Visual match to uploaded image) */
-.sp-single-related-card {
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    display: block;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-}
-
-.sp-single-related-thumbnail {
-    position: relative;
-    aspect-ratio: 1 / 1; 
-    background: #000;
-}
-
-.sp-single-related-badges {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    z-index: 10;
-}
-
-.sp-single-related-badge-item {
-    background-color: #ffcc00; /* Yellow from your image */
-    color: #000;
-    font-size: 0.75rem;
-    font-weight: 800;
-    padding: 4px 10px;
-    border-radius: 4px;
-    text-transform: uppercase;
-}
-
-.sp-single-related-overlay-title {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 40px 15px 15px;
-    background: linear-gradient(transparent, rgba(0,0,0,0.85));
-    z-index: 5;
-}
-
-.sp-single-related-title {
-    color: #fff !important;
-    font-size: 1rem;
-    font-weight: 700;
+    color: var(--text-main);
+    letter-spacing: -1.5px;
     margin: 0;
-    line-height: 1.4;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
-/* Hover Effects */
-.sp-single-related-card:hover .sp-single-img-responsive {
-    transform: scale(1.08);
+/* High-End Ball Styling */
+.ball {
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle at 30% 30%, #ffffff 0%, #f1f5f9 100%);
+    border: 1px solid #d1d5db;
+    color: #1e293b;
+    box-shadow: inset -3px -3px 6px rgba(0,0,0,0.05), 3px 5px 10px rgba(0,0,0,0.08);
+    font-size: 1.3rem;
+    transition: transform 0.2s ease;
 }
 
-.sp-single-img-responsive {
-    transition: transform 0.4s ease;
+.ball:hover {
+    transform: scale(1.1) translateY(-2px);
+    z-index: 2;
 }
 
-/* Responsive */
-@media (max-width: 992px) {
-    .sp-single-related-grid { grid-template-columns: repeat(2, 1fr); }
+.ball.bonus {
+    background: radial-gradient(circle at 30% 30%, #fbbf24 0%, #d97706 100%);
+    border: none;
+    color: white;
+    box-shadow: 0 6px 15px rgba(217, 119, 6, 0.3);
 }
-@media (max-width: 500px) {
-    .sp-single-related-grid { grid-template-columns: 1fr; }
+
+        /* Floating Tabs with horizontal scroll */
+        .tabs { 
+            display: flex; 
+            gap: 8px; 
+            margin-bottom: 32px; 
+            background: rgba(255,255,255,0.5); 
+            padding: 8px; 
+            border-radius: var(--radius-lg); 
+            border: 1px solid var(--border); 
+            /* --- SCROLL OVERFLOW ADDITIONS --- */
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;          /* ensures buttons stay in one line */
+            -webkit-overflow-scrolling: touch;  /* smooth momentum scroll on iOS */
+            scrollbar-width: thin;         /* Firefox: thinner scrollbar */
+            scrollbar-color: var(--primary) var(--border);
+        }
+        .tabs::-webkit-scrollbar {
+            height: 6px;
+        }
+        .tabs::-webkit-scrollbar-track {
+            background: var(--border);
+            border-radius: 10px;
+        }
+        .tabs::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 10px;
+        }
+
+        .tab-btn { 
+            flex: 0 0 auto;                /* Prevents stretching, allows natural width for scroll */
+            padding: 12px 20px; 
+            background: transparent; 
+            border: none; 
+            border-radius: var(--radius-md); 
+            font-size: 1rem; 
+            font-weight: 600; 
+            color: var(--text-muted); 
+            cursor: pointer; 
+            transition: var(--transition); 
+        }
+        .tab-btn.active { 
+            background: var(--surface-solid); 
+            color: var(--primary); 
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); 
+        }
+        .tab-btn:hover:not(.active) { color: var(--text-main); }
+        
+        .tab-content { display: none; opacity: 0; transform: translateY(10px); transition: var(--transition); }
+        .tab-content.active { display: block; opacity: 1; transform: translateY(0); }
+
+        /* Data Displays */
+        .jackpot-display { font-size: 2.5rem; font-weight: 800; color: var(--text-main); margin: 8px 0 24px; letter-spacing: -1px;}
+        .jackpot-label { display: block; font-size: 0.875rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; letter-spacing: 1px; }
+        
+        .balls-row { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 32px; }
+        .ball { width: 64px; height: 64px; display: flex; justify-content: center; align-items: center; border-radius: 50%; font-size: 1.25rem; font-weight: 700; background: var(--surface-solid); border: 1px solid var(--border); color: var(--text-main); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        .ball.bonus { background: linear-gradient(135deg, #fbbf24, #d97706); border: none; color: white; box-shadow: 0 4px 10px rgba(217, 119, 6, 0.3); }
+
+        .advanced-stats { display: flex; gap: 16px; padding-top: 24px; border-top: 1px dashed var(--border); }
+        .stat-box { flex: 1; background: rgba(255,255,255,0.4); padding: 16px; border-radius: var(--radius-md); text-align: center; border: 1px solid var(--border); }
+        .stat-val { font-size: 1.5rem; font-weight: 800; color: var(--primary); }
+        .stat-lbl { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px;}
+
+        /* Dynamic Sidebar Elements */
+        .sidebar-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+        .dynamic-game-label { font-size: 0.875rem; background: var(--primary-glow); color: var(--primary); padding: 4px 12px; border-radius: 20px; font-weight: 700; }
+
+        .utility-row { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid rgba(0,0,0,0.03); transition: var(--transition); }
+        .mini-balls { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end;}
+        .mini-ball { width: 36px; height: 36px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 0.875rem; font-weight: 700; color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);}
+        .mini-ball.hot { background: linear-gradient(135deg, #f87171, #ef4444); }
+        .mini-ball.cold { background: linear-gradient(135deg, #38bdf8, #0ea5e9); }
+        .pair-badge { background: var(--surface-solid); border: 1px solid var(--border); padding: 8px 16px; border-radius: 20px; font-size: 0.875rem; font-weight: 700; color: var(--text-main); box-shadow: 0 2px 4px rgba(0,0,0,0.02);}
+
+        /* Buttons */
+        .btn { display: block; width: 100%; padding: 16px; background: var(--primary); color: white; border: none; border-radius: var(--radius-md); font-size: 1rem; font-weight: 600; cursor: pointer; text-align: center; transition: var(--transition); box-shadow: 0 4px 15px var(--primary-glow); }
+        .btn:hover { background: #4338ca; transform: translateY(-2px); box-shadow: 0 6px 20px var(--primary-glow); }
+        
+        .btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); box-shadow: none; }
+        .btn-outline:hover { background: var(--primary-glow); color: var(--primary); transform: translateY(-2px); }
+
+        /* Generator Box */
+        .generator-box { margin-top: 24px; padding: 32px; background: linear-gradient(135deg, #0f172a, #1e293b); color: white; border-radius: var(--radius-lg); text-align: center; box-shadow: 0 10px 25px rgba(15, 23, 42, 0.3); border: 1px solid #334155;}
+        .gen-result { font-size: 1.75rem; letter-spacing: 0px; font-weight: 800; margin: 24px 0; color: var(--accent-gold); min-height: 42px; text-shadow: 0 2px 10px rgba(245, 158, 11, 0.2); }
+        
+        header {
+    border-bottom: 2px solid #8338e9;
 }
 
+    </style>
+</head>
+<body>
 
+    <header>
+        <div class="container nav-wrap">
+            <a href="/" class="logo">LottoGenius SA</a>
+        </div>
+    </header>
 
-<?php
-/**
- * Template Name: SP Wide Single
- * Template Post Type: post
- */
-
-get_header();
-?>
-
-<main class="sp-single-main-wrapper">
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <article class="sp-single-article">
-            <header class="sp-single-header">
-                <h1 class="sp-single-title"><?php the_title(); ?></h1>
-                
-                <div class="sp-single-breadcrumbs">
-                    <a href="<?php echo home_url(); ?>">Home</a> &raquo; 
-                    <span class="sp-single-current-crumb"><?php the_title(); ?></span>
-                </div>
-
-                <div class="sp-single-category-container">
-                    <?php 
-                        $categories = get_the_category();
-                        if ( ! empty( $categories ) ) {
-                            foreach( $categories as $cat ) {
-                                echo '<span class="sp-single-category-badge">' . esc_html( $cat->name ) . '</span>';
-                            }
-                        }
-                    ?>
-                </div>
-
-                <div class="sp-single-author-box">
-                    <div class="sp-single-author-avatar">
-                        <?php echo get_avatar( get_the_author_meta( 'ID' ), 60 ); ?>
-                    </div>
-                    <div class="sp-single-author-info">
-                        <div class="sp-single-author-name">
-                            by <strong><?php the_author(); ?></strong>
-                        </div>
-                        <div class="sp-single-post-meta">
-                            <span class="sp-single-meta-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                                <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </header>
-
-            <div class="sp-single-content">
-                <?php the_content(); ?>
-            </div>
-        </article>
-    <?php endwhile; endif; ?>
-</main>
-
-<?php
-if ( ! empty( $categories ) ) {
-    $cat_ids = wp_list_pluck( $categories, 'term_id' );
-    $related_args = array(
-        'category__in'        => $cat_ids,
-        'post__not_in'        => array( get_the_ID() ),
-        'posts_per_page'      => 4,
-        'ignore_sticky_posts' => 1
-    );
-
-    $related_query = new WP_Query( $related_args );
-
-    if ( $related_query->have_posts() ) : ?>
-        <section class="sp-single-full-width-related">
-            <div class="sp-single-related-inner">
-                <h2 class="sp-single-related-heading">More Recommendations</h2>
-                <div class="sp-single-related-grid">
-                    <?php while ( $related_query->have_posts() ) : $related_query->the_post(); ?>
-                        <a href="<?php the_permalink(); ?>" class="sp-single-related-card">
-                            <div class="sp-single-related-thumbnail">
-                                
-                                <div class="sp-single-related-badges">
-                                    <?php 
-                                    $current_related_cats = get_the_category();
-                                    if ( ! empty( $current_related_cats ) ) {
-                                        foreach( $current_related_cats as $related_cat ) {
-                                            echo '<span class="sp-single-related-badge-item">' . esc_html( $related_cat->name ) . '</span>';
-                                        }
-                                    }
-                                    ?>
-                                </div>
-
-                                <?php if ( has_post_thumbnail() ) : ?>
-                                    <?php the_post_thumbnail('medium_large', ['class' => 'sp-single-img-responsive']); ?>
-                                <?php else : ?>
-                                    <div class="sp-single-placeholder-img"></div>
-                                <?php endif; ?>
-
-                                <div class="sp-single-related-overlay-title">
-                                    <h4 class="sp-single-related-title"><?php the_title(); ?></h4>
-                                </div>
-                            </div>
-                        </a>
-                    <?php endwhile; ?>
-                </div>
-            </div>
+    <main class="container">
+        <section class="hero">
+            <h1>Predictive Analytics Dashboard</h1>
+            <p>Select a game below to instantly update historical trends, hot/cold analysis, and algorithms.</p>
         </section>
-    <?php 
-    endif;
-    wp_reset_postdata();
-}
-?>
 
-<?php get_footer(); ?>
+        <div class="grid">
+            
+            <section class="card" id="results-section">
+                <div class="tabs-wrapper">
+                    <div class="tabs">
+                        <button class="tab-btn active" onclick="switchTab('dailylotto')">Daily Lotto</button>
+                        <button class="tab-btn" onclick="switchTab('powerball')">PowerBall</button>
+                        <button class="tab-btn" onclick="switchTab('powerball_plus')">PowerBall Plus</button>
+                        <button class="tab-btn" onclick="switchTab('lotto')">Lotto</button>
+                        <button class="tab-btn" onclick="switchTab('lotto_plus_1')">Lotto Plus 1</button>
+                        <button class="tab-btn" onclick="switchTab('lotto_plus_2')">Lotto Plus 2</button>
+                    </div>
+                </div>
+            
+                <?php foreach($lotteryData as $key => $data): ?>
+                    <div id="<?php echo $key; ?>-content" class="tab-content <?php echo $key === 'dailylotto' ? 'active' : ''; ?>">
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <p style="color: var(--text-muted); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
+                                Last Draw: <?php echo $data['date']; ?>
+                            </p>
+                            <div style="width: 8px; height: 8px; background: #10b981; border-radius: 50%; box-shadow: 0 0 8px #10b981;"></div>
+                        </div>
+                        
+                        <div class="jackpot-container">
+                            <span class="jackpot-label">Estimated Jackpot</span>
+                            <div class="jackpot-display">
+                                <?php echo $data['jackpot']; ?>
+                            </div>
+                        </div>
+            
+                        <ul class="balls-row" style="padding: 10px 0;">
+                            <?php foreach($data['numbers'] as $num): ?>
+                                <li class="ball"><?php echo $num; ?></li>
+                            <?php endforeach; ?>
+                            
+                            <?php if($data['bonus']): ?>
+                                <li class="ball bonus" title="Bonus Ball"><?php echo $data['bonus']; ?></li>
+                            <?php endif; ?>
+                        </ul>
+            
+                        <div class="advanced-stats">
+                            <div class="stat-box">
+                                <div class="stat-lbl">Odd/Even</div>
+                                <div class="stat-val"><?php echo $data['stats']['odd_even']; ?></div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-lbl">High/Low</div>
+                                <div class="stat-val"><?php echo $data['stats']['high_low']; ?></div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+                
+                <div style="margin-top: 32px;">
+                     <a href="/history/dailylotto" id="dynamic-history-link" class="btn btn-outline" style="border-width: 1.5px; letter-spacing: 0.3px;">
+                        View Full Daily Lotto History
+                     </a>
+                </div>
+            </section>
+
+            <aside>
+                <div class="card" style="margin-bottom: 24px;">
+                    <div class="sidebar-header">
+                        <h2 style="font-size: 1.25rem; font-weight: 700;">Trend Analysis</h2>
+                        <span id="dynamic-sidebar-label" class="dynamic-game-label">PowerBall</span>
+                    </div>
+                    
+                    <div class="utility-row">
+                        <span style="font-weight: 600; color: var(--text-main);">Sizzling Hot</span>
+                        <ul class="mini-balls" id="dyn-hot-numbers">
+                            <!-- Filled by JS -->
+                        </ul>
+                    </div>
+
+                    <div class="utility-row">
+                        <span style="font-weight: 600; color: var(--text-main);">Freezing Cold</span>
+                        <ul class="mini-balls" id="dyn-cold-numbers">
+                            <!-- Filled by JS -->
+                        </ul>
+                    </div>
+
+                    <div class="utility-row" style="border-bottom: none;">
+                        <span style="font-weight: 600; color: var(--text-main);">Top Pairs</span>
+                        <div style="display: flex; gap: 8px;" id="dyn-frequent-pairs">
+                            <!-- Filled by JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="generator-box" id="generator">
+                    <h3 style="margin-bottom: 8px;">Smart Generator</h3>
+                    <p style="font-size: 0.875rem; color: #94a3b8;">Uses standard deviation algorithms specific to <span id="dyn-gen-label" style="color: white; font-weight: bold;">PowerBall</span>.</p>
+                    
+                    <div class="gen-result" id="generated-numbers">
+                        -- -- -- -- --
+                    </div>
+                    
+                    <button class="btn" style="background: var(--accent-gold); color: #78350f; box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);" onclick="generateTicket()">Generate Algorithm Pick</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script>
+        // Import the PHP data directly into a JavaScript object
+        const appData = <?php echo $jsonData; ?>;
+        
+        // Track current game for the generator
+        let currentGame = 'powerball';
+
+        // Function to render mini balls in the sidebar
+        function renderMiniBalls(numbers, type) {
+            return numbers.map(num => `<li class="mini-ball ${type}">${num}</li>`).join('');
+        }
+
+        // Function to render pairs in the sidebar
+        function renderPairs(pairs) {
+            return pairs.map(pair => `<span class="pair-badge">${pair}</span>`).join('');
+        }
+
+        // Main Tab Switching & SPA Logic
+        function switchTab(gameId) {
+            currentGame = gameId;
+            const data = appData[gameId];
+
+            // 1. Update Tabs UI
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+                content.style.opacity = '0'; // For smooth fade
+            });
+            
+            // Find the clicked button and set it active
+            const activeBtn = Array.from(document.querySelectorAll('.tab-btn')).find(
+                btn => btn.textContent.trim().toLowerCase().includes(gameId.replace('plus', ' Plus'))
+            );
+            if (activeBtn) activeBtn.classList.add('active');
+            
+            const targetContent = document.getElementById(gameId + '-content');
+            targetContent.classList.add('active');
+            setTimeout(() => targetContent.style.opacity = '1', 50);
+
+            // 2. Update Dynamic History Link at the bottom of the left column
+            const historyLink = document.getElementById('dynamic-history-link');
+            historyLink.href = `/history/${gameId}`;
+            historyLink.innerText = `View Full ${data.name} History`;
+
+            // 3. Update the Right Sidebar Headers
+            document.getElementById('dynamic-sidebar-label').innerText = data.name;
+            document.getElementById('dyn-gen-label').innerText = data.name;
+
+            // 4. Update the Analytics Data (Hot/Cold/Pairs)
+            document.getElementById('dyn-hot-numbers').innerHTML = renderMiniBalls(data.analytics.hot, 'hot');
+            document.getElementById('dyn-cold-numbers').innerHTML = renderMiniBalls(data.analytics.cold, 'cold');
+            document.getElementById('dyn-frequent-pairs').innerHTML = renderPairs(data.analytics.pairs);
+            
+            // 5. Reset Generator Display
+            document.getElementById('generated-numbers').innerHTML = '-- -- -- -- --';
+        }
+
+        // Context-Aware Smart Generator Logic
+        function generateTicket() {
+            const rules = appData[currentGame].rules;
+            const resultDiv = document.getElementById('generated-numbers');
+            
+            // Loading state
+            resultDiv.innerHTML = '<span style="font-size: 1rem; color: #94a3b8; letter-spacing: 0;">Calculating parameters...</span>';
+            resultDiv.style.opacity = '0.5';
+
+            setTimeout(() => {
+                let numbers = [];
+                // Generate main balls based on game specific rules
+                while(numbers.length < rules.draw_size){
+                    let r = Math.floor(Math.random() * rules.max_num) + 1;
+                    if(numbers.indexOf(r) === -1) numbers.push(r);
+                }
+                numbers.sort((a,b) => a - b);
+                
+                // Format main numbers
+                let formatted = numbers.map(n => n.toString().padStart(2, '0')).join(' &nbsp; ');
+                
+                // Append Bonus Ball if the game requires it
+                if(rules.has_bonus) {
+                    let bonusNum = Math.floor(Math.random() * rules.bonus_max) + 1;
+                    formatted += ` <span style="color: white; margin: 0 10px;">|</span> <span style="color: #fbbf24;">${bonusNum.toString().padStart(2, '0')}</span>`;
+                }
+                
+                resultDiv.innerHTML = formatted;
+                resultDiv.style.opacity = '1';
+            }, 500); 
+        }
+
+        // Initialize the sidebar on first load
+        window.onload = () => {
+            switchTab('powerball'); 
+        };
+    </script>
+</body>
+</html>
