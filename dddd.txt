@@ -1,10 +1,7 @@
 <?php
 // --- SIMULATED BACKEND DATA PIPELINE ---
-// We now structure the data so JavaScript can easily consume it for dynamic updates.
-
 $pageTitle = "SA Lottery Analytics | Premium Data Dashboard";
 
-// Master Array: Contains Results AND Game-Specific Analytics
 $lotteryData = [
     'powerball' => [
         'id' => 'powerball',
@@ -19,7 +16,6 @@ $lotteryData = [
             'cold' => [2, 11, 29, 31, 49],
             'pairs' => ['14 & 23', '7 & 42']
         ],
-        // Rules for the Smart Generator
         'rules' => ['max_num' => 50, 'draw_size' => 5, 'has_bonus' => true, 'bonus_max' => 20]
     ],
     'powerballplus' => [
@@ -69,7 +65,6 @@ $lotteryData = [
     ]
 ];
 
-// Encode the PHP array into JSON so JavaScript can access it seamlessly
 $jsonData = json_encode($lotteryData);
 ?>
 <!DOCTYPE html>
@@ -77,244 +72,176 @@ $jsonData = json_encode($lotteryData);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium South African Lottery Analytics Dashboard. View hot/cold numbers, trends, and generate smart algorithmic picks.">
     <title><?php echo $pageTitle; ?></title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <style>
         /* --- ELEVATED MODERN UI --- */
         :root {
-            --bg-grad: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
-            --surface: rgba(255, 255, 255, 0.85);
+            --bg-grad: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            --surface: rgba(255, 255, 255, 0.9);
             --surface-solid: #ffffff;
             --text-main: #0f172a;
             --text-muted: #64748b;
-            --primary: #4f46e5;      /* Modern Indigo */
-            --primary-glow: rgba(79, 70, 229, 0.3);
+            --primary: #4f46e5;
+            --primary-hover: #4338ca;
+            --primary-glow: rgba(79, 70, 229, 0.2);
             --accent-hot: #ef4444;
             --accent-cold: #0ea5e9;
             --accent-gold: #f59e0b;
-            --border: rgba(226, 232, 240, 0.8);
-            --radius-lg: 24px;
+            --success: #10b981;
+            --border: rgba(203, 213, 225, 0.6);
+            --radius-lg: 20px;
             --radius-md: 12px;
-            --shadow-float: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+            --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; background: var(--bg-grad); color: var(--text-main); line-height: 1.6; min-height: 100vh; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: var(--bg-grad); 
+            color: var(--text-main); 
+            line-height: 1.6; 
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
         a { text-decoration: none; color: inherit; }
         ul { list-style: none; }
 
-        .container { max-width: 1300px; margin: 0 auto; padding: 0 24px; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 20px; }
         
-        /* Glassmorphism Header */
+        /* Header */
         header { 
-            background: rgba(255, 255, 255, 0.7); 
+            background: rgba(255, 255, 255, 0.8); 
             backdrop-filter: blur(12px); 
             -webkit-backdrop-filter: blur(12px);
-            padding: 20px 0; 
-            border-bottom: 1px solid var(--border); 
+            padding: 16px 0; 
+            border-bottom: 2px solid var(--primary); 
             position: sticky; top: 0; z-index: 100;
         }
         .nav-wrap { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.5rem; font-weight: 700; background: linear-gradient(90deg, var(--primary), #9333ea); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -0.5px; }
+        .logo { font-size: 1.5rem; font-weight: 800; background: linear-gradient(90deg, var(--primary), #9333ea); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -0.5px; }
 
-        .hero { padding: 48px 0 32px; text-align: center; }
-        .hero h1 { font-size: 2.5rem; letter-spacing: -1px; margin-bottom: 12px; color: #1e293b; }
+        .hero { padding: 40px 0 32px; text-align: center; }
+        .hero h1 { font-size: clamp(2rem, 5vw, 2.75rem); letter-spacing: -1px; margin-bottom: 12px; color: #1e293b; font-weight: 800;}
         .hero p { color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
 
-        .grid { display: grid; grid-template-columns: 2.2fr 1.2fr; gap: 21px; margin-bottom: 21px; }
-        @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+        .grid { display: grid; grid-template-columns: 2fr 1fr; gap: 24px; margin-bottom: 40px; }
+        @media (max-width: 960px) { .grid { grid-template-columns: 1fr; } }
 
-        /* Modern Cards */
+        /* Cards */
         .card { 
             background: var(--surface); 
             backdrop-filter: blur(16px);
             border-radius: var(--radius-lg); 
-            padding: 13px; 
-            box-shadow: var(--shadow-float); 
+            padding: 24px; 
+            box-shadow: var(--shadow-md); 
             border: 1px solid var(--border); 
         }
-        
-        /* Container for the scroll fade effect */
-.tabs-wrapper {
-    position: relative;
-    margin-bottom: 32px;
-}
 
-/* Gradient faders to show scroll exists */
-.tabs-wrapper::after {
-    content: '';
-    position: absolute;
-    top: 0; right: 0; bottom: 0;
-    width: 40px;
-    background: linear-gradient(to right, transparent, var(--bg-grad));
-    pointer-events: none;
-}
-
-.tabs {
-    display: flex;
-    gap: 8px;
-    background: rgba(0, 0, 0, 0.03); /* Subtle inset look */
-    padding: 6px;
-    border-radius: var(--radius-md);
-    overflow-x: auto;
-    white-space: nowrap;
-    scrollbar-width: none;
-    position: relative;
-    z-index: 1;
-}
-
-.tab-btn {
-    flex: 0 0 auto;
-    padding: 10px 20px;
-    border-radius: calc(var(--radius-md) - 4px);
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--text-muted);
-    transition: all 0.25s ease;
-}
-
-.tab-btn.active {
-    background: var(--surface-solid);
-    color: var(--primary);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transform: translateY(-1px);
-}
-
-/* Enhanced Jackpot Section */
-.jackpot-container {
-    background: linear-gradient(135deg, rgba(79, 70, 229, 0.05) 0%, rgba(147, 51, 234, 0.05) 100%);
-    padding: 24px;
-    border-radius: var(--radius-md);
-    border: 1px solid rgba(79, 70, 229, 0.1);
-    margin: 20px 0;
-}
-
-.jackpot-display {
-    font-size: 2.8rem;
-    font-weight: 800;
-    color: var(--text-main);
-    letter-spacing: -1.5px;
-    margin: 0;
-}
-
-/* High-End Ball Styling */
-.ball {
-    width: 60px;
-    height: 60px;
-    background: radial-gradient(circle at 30% 30%, #ffffff 0%, #f1f5f9 100%);
-    border: 1px solid #d1d5db;
-    color: #1e293b;
-    box-shadow: inset -3px -3px 6px rgba(0,0,0,0.05), 3px 5px 10px rgba(0,0,0,0.08);
-    font-size: 1.3rem;
-    transition: transform 0.2s ease;
-}
-
-.ball:hover {
-    transform: scale(1.1) translateY(-2px);
-    z-index: 2;
-}
-
-.ball.bonus {
-    background: radial-gradient(circle at 30% 30%, #fbbf24 0%, #d97706 100%);
-    border: none;
-    color: white;
-    box-shadow: 0 6px 15px rgba(217, 119, 6, 0.3);
-}
-
-        /* Floating Tabs with horizontal scroll */
+        /* Tabs Navigation */
+        .tabs-wrapper { position: relative; margin-bottom: 24px; }
+        .tabs-wrapper::after {
+            content: ''; position: absolute; top: 0; right: 0; bottom: 0; width: 40px;
+            background: linear-gradient(to right, transparent, var(--surface));
+            pointer-events: none; border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+        }
         .tabs { 
-            display: flex; 
-            gap: 8px; 
-            margin-bottom: 32px; 
-            background: rgba(255,255,255,0.5); 
-            padding: 8px; 
-            border-radius: var(--radius-lg); 
-            border: 1px solid var(--border); 
-            /* --- SCROLL OVERFLOW ADDITIONS --- */
-            overflow-x: auto;
-            overflow-y: hidden;
-            white-space: nowrap;          /* ensures buttons stay in one line */
-            -webkit-overflow-scrolling: touch;  /* smooth momentum scroll on iOS */
-            scrollbar-width: thin;         /* Firefox: thinner scrollbar */
-            scrollbar-color: var(--primary) var(--border);
+            display: flex; gap: 8px; background: rgba(0, 0, 0, 0.03); padding: 6px; 
+            border-radius: var(--radius-md); overflow-x: auto; white-space: nowrap; 
+            scrollbar-width: none; position: relative; z-index: 1; border: 1px solid var(--border);
         }
-        .tabs::-webkit-scrollbar {
-            height: 6px;
-        }
-        .tabs::-webkit-scrollbar-track {
-            background: var(--border);
-            border-radius: 10px;
-        }
-        .tabs::-webkit-scrollbar-thumb {
-            background: var(--primary);
-            border-radius: 10px;
-        }
-
+        .tabs::-webkit-scrollbar { display: none; }
         .tab-btn { 
-            flex: 0 0 auto;                /* Prevents stretching, allows natural width for scroll */
-            padding: 12px 20px; 
-            background: transparent; 
-            border: none; 
-            border-radius: var(--radius-md); 
-            font-size: 1rem; 
-            font-weight: 600; 
-            color: var(--text-muted); 
-            cursor: pointer; 
-            transition: var(--transition); 
+            flex: 0 0 auto; padding: 10px 20px; border-radius: 8px; font-size: 0.95rem; 
+            font-weight: 600; color: var(--text-muted); background: transparent; 
+            border: none; cursor: pointer; transition: var(--transition); 
         }
+        .tab-btn:hover:not(.active) { color: var(--text-main); background: rgba(255,255,255,0.5); }
         .tab-btn.active { 
-            background: var(--surface-solid); 
-            color: var(--primary); 
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); 
+            background: var(--surface-solid); color: var(--primary); 
+            box-shadow: var(--shadow-sm); transform: translateY(-1px); 
         }
-        .tab-btn:hover:not(.active) { color: var(--text-main); }
-        
-        .tab-content { display: none; opacity: 0; transform: translateY(10px); transition: var(--transition); }
-        .tab-content.active { display: block; opacity: 1; transform: translateY(0); }
 
-        /* Data Displays */
-        .jackpot-display { font-size: 2.5rem; font-weight: 800; color: var(--text-main); margin: 8px 0 24px; letter-spacing: -1px;}
-        .jackpot-label { display: block; font-size: 0.875rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; letter-spacing: 1px; }
-        
-        .balls-row { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 32px; }
-        .ball { width: 64px; height: 64px; display: flex; justify-content: center; align-items: center; border-radius: 50%; font-size: 1.25rem; font-weight: 700; background: var(--surface-solid); border: 1px solid var(--border); color: var(--text-main); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
-        .ball.bonus { background: linear-gradient(135deg, #fbbf24, #d97706); border: none; color: white; box-shadow: 0 4px 10px rgba(217, 119, 6, 0.3); }
+        .tab-content { display: none; animation: fadeIn 0.3s ease forwards; }
+        .tab-content.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
 
-        .advanced-stats { display: flex; gap: 16px; padding-top: 24px; border-top: 1px dashed var(--border); }
-        .stat-box { flex: 1; background: rgba(255,255,255,0.4); padding: 16px; border-radius: var(--radius-md); text-align: center; border: 1px solid var(--border); }
-        .stat-val { font-size: 1.5rem; font-weight: 800; color: var(--primary); }
-        .stat-lbl { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px;}
+        /* Draw Info Header */
+        .draw-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+        .draw-date { color: var(--text-muted); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+        .status-dot { width: 10px; height: 10px; background: var(--success); border-radius: 50%; box-shadow: 0 0 10px var(--success); }
 
-        /* Dynamic Sidebar Elements */
+        /* Jackpot */
+        .jackpot-container { 
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.03) 0%, rgba(147, 51, 234, 0.03) 100%); 
+            padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--primary-glow); margin-bottom: 24px; text-align: center;
+        }
+        .jackpot-label { display: block; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin-bottom: 4px; }
+        .jackpot-display { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; color: var(--primary); letter-spacing: -1.5px; line-height: 1; }
+
+        /* Lottery Balls */
+        .balls-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 32px; justify-content: center; }
+        .ball { 
+            width: clamp(50px, 8vw, 64px); height: clamp(50px, 8vw, 64px); 
+            display: flex; justify-content: center; align-items: center; 
+            border-radius: 50%; font-size: clamp(1.1rem, 2vw, 1.3rem); font-weight: 700; 
+            background: radial-gradient(circle at 30% 30%, #ffffff 0%, #f1f5f9 100%);
+            border: 1px solid #d1d5db; color: #1e293b; 
+            box-shadow: inset -2px -2px 5px rgba(0,0,0,0.05), 2px 4px 8px rgba(0,0,0,0.08); 
+            transition: transform 0.2s ease;
+        }
+        .ball:hover { transform: translateY(-4px) scale(1.05); }
+        .ball.bonus { background: radial-gradient(circle at 30% 30%, #fbbf24 0%, #d97706 100%); border: none; color: white; box-shadow: 0 6px 15px rgba(217, 119, 6, 0.3); }
+
+        /* Stats Blocks */
+        .advanced-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding-top: 24px; border-top: 1px dashed var(--border); }
+        .stat-box { background: rgba(255,255,255,0.6); padding: 16px; border-radius: var(--radius-md); text-align: center; border: 1px solid var(--border); transition: var(--transition); }
+        .stat-box:hover { background: var(--surface-solid); box-shadow: var(--shadow-sm); }
+        .stat-lbl { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 4px;}
+        .stat-val { font-size: 1.5rem; font-weight: 800; color: var(--text-main); }
+
+        /* Sidebar Elements */
         .sidebar-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
-        .dynamic-game-label { font-size: 0.875rem; background: var(--primary-glow); color: var(--primary); padding: 4px 12px; border-radius: 20px; font-weight: 700; }
+        .sidebar-header h2 { font-size: 1.25rem; font-weight: 800; }
+        .dynamic-game-label { font-size: 0.8rem; background: var(--primary-glow); color: var(--primary); padding: 4px 12px; border-radius: 20px; font-weight: 700; }
 
-        .utility-row { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid rgba(0,0,0,0.03); transition: var(--transition); }
-        .mini-balls { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end;}
-        .mini-ball { width: 36px; height: 36px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 0.875rem; font-weight: 700; color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);}
+        .utility-row { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--border); }
+        .utility-row:last-child { border-bottom: none; }
+        .utility-label { font-weight: 600; color: var(--text-main); font-size: 0.95rem; }
+        
+        .mini-balls { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end;}
+        .mini-ball { width: 32px; height: 32px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 0.85rem; font-weight: 700; color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);}
         .mini-ball.hot { background: linear-gradient(135deg, #f87171, #ef4444); }
         .mini-ball.cold { background: linear-gradient(135deg, #38bdf8, #0ea5e9); }
-        .pair-badge { background: var(--surface-solid); border: 1px solid var(--border); padding: 8px 16px; border-radius: 20px; font-size: 0.875rem; font-weight: 700; color: var(--text-main); box-shadow: 0 2px 4px rgba(0,0,0,0.02);}
-
-        /* Buttons */
-        .btn { display: block; width: 100%; padding: 16px; background: var(--primary); color: white; border: none; border-radius: var(--radius-md); font-size: 1rem; font-weight: 600; cursor: pointer; text-align: center; transition: var(--transition); box-shadow: 0 4px 15px var(--primary-glow); }
-        .btn:hover { background: #4338ca; transform: translateY(-2px); box-shadow: 0 6px 20px var(--primary-glow); }
-        
-        .btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); box-shadow: none; }
-        .btn-outline:hover { background: var(--primary-glow); color: var(--primary); transform: translateY(-2px); }
+        .pair-badge { background: var(--surface-solid); border: 1px solid var(--border); padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 700; color: var(--text-main); box-shadow: var(--shadow-sm);}
 
         /* Generator Box */
-        .generator-box { margin-top: 24px; padding: 32px; background: linear-gradient(135deg, #0f172a, #1e293b); color: white; border-radius: var(--radius-lg); text-align: center; box-shadow: 0 10px 25px rgba(15, 23, 42, 0.3); border: 1px solid #334155;}
-        .gen-result { font-size: 1.75rem; letter-spacing: 0px; font-weight: 800; margin: 24px 0; color: var(--accent-gold); min-height: 42px; text-shadow: 0 2px 10px rgba(245, 158, 11, 0.2); }
+        .generator-box { margin-top: 24px; padding: 32px 24px; background: linear-gradient(135deg, #0f172a, #1e293b); color: white; border-radius: var(--radius-lg); text-align: center; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.4); border: 1px solid #334155; position: relative; overflow: hidden; }
+        .generator-box::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(245,158,11,0.05) 0%, transparent 60%); pointer-events: none; }
+        .generator-box h3 { margin-bottom: 8px; font-weight: 800; font-size: 1.5rem; }
+        .gen-desc { font-size: 0.85rem; color: #94a3b8; margin-bottom: 24px; }
+        .gen-desc span { color: white; font-weight: 700; }
         
-        header {
-    border-bottom: 2px solid #8338e9;
-}
+        .gen-result { font-size: 1.75rem; font-weight: 800; margin: 24px 0; color: var(--accent-gold); min-height: 48px; display: flex; justify-content: center; align-items: center; gap: 12px; font-variant-numeric: tabular-nums; }
+        .gen-ball { width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.2); color: white; }
+        .gen-ball.bonus-pick { border-color: var(--accent-gold); color: var(--accent-gold); background: rgba(245, 158, 11, 0.1); }
+
+        /* Buttons */
+        .btn { display: inline-flex; justify-content: center; align-items: center; width: 100%; padding: 14px 24px; background: var(--primary); color: white; border: none; border-radius: var(--radius-md); font-size: 1rem; font-weight: 600; cursor: pointer; transition: var(--transition); box-shadow: 0 4px 15px var(--primary-glow); }
+        .btn:hover { background: var(--primary-hover); transform: translateY(-2px); box-shadow: 0 6px 20px var(--primary-glow); }
+        .btn:active { transform: translateY(0); }
+        
+        .btn-outline { background: transparent; border: 2px solid var(--border); color: var(--text-main); box-shadow: none; margin-top: 24px; }
+        .btn-outline:hover { background: var(--surface-solid); border-color: var(--primary); color: var(--primary); }
+        .btn-gold { background: var(--accent-gold); color: #78350f; box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3); }
+        .btn-gold:hover { background: #f5a623; }
 
     </style>
 </head>
@@ -333,201 +260,216 @@ $jsonData = json_encode($lotteryData);
         </section>
 
         <div class="grid">
-            
             <section class="card" id="results-section">
                 <div class="tabs-wrapper">
-                    <div class="tabs">
-                        <button class="tab-btn active" onclick="switchTab('dailylotto')">Daily Lotto</button>
-                        <button class="tab-btn" onclick="switchTab('powerball')">PowerBall</button>
-                        <button class="tab-btn" onclick="switchTab('powerball_plus')">PowerBall Plus</button>
-                        <button class="tab-btn" onclick="switchTab('lotto')">Lotto</button>
-                        <button class="tab-btn" onclick="switchTab('lotto_plus_1')">Lotto Plus 1</button>
-                        <button class="tab-btn" onclick="switchTab('lotto_plus_2')">Lotto Plus 2</button>
+                    <div class="tabs" role="tablist" aria-label="Lottery Games">
+                        <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="dailylotto-content" onclick="switchTab('dailylotto', this)">Daily Lotto</button>
+                        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="powerball-content" onclick="switchTab('powerball', this)">PowerBall</button>
+                        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="powerballplus-content" onclick="switchTab('powerballplus', this)">PowerBall Plus</button>
+                        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="lotto-content" onclick="switchTab('lotto', this)">Lotto</button>
                     </div>
                 </div>
             
                 <?php foreach($lotteryData as $key => $data): ?>
-                    <div id="<?php echo $key; ?>-content" class="tab-content <?php echo $key === 'dailylotto' ? 'active' : ''; ?>">
+                    <div id="<?php echo $key; ?>-content" role="tabpanel" tabindex="0" class="tab-content <?php echo $key === 'dailylotto' ? 'active' : ''; ?>">
                         
-                        <div style="display: flex; justify-content: space-between; align-items: center;">
-                            <p style="color: var(--text-muted); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
-                                Last Draw: <?php echo $data['date']; ?>
-                            </p>
-                            <div style="width: 8px; height: 8px; background: #10b981; border-radius: 50%; box-shadow: 0 0 8px #10b981;"></div>
+                        <div class="draw-header">
+                            <span class="draw-date">Last Draw: <?php echo $data['date']; ?></span>
+                            <div class="status-dot" aria-label="Results verified"></div>
                         </div>
                         
                         <div class="jackpot-container">
                             <span class="jackpot-label">Estimated Jackpot</span>
-                            <div class="jackpot-display">
-                                <?php echo $data['jackpot']; ?>
-                            </div>
+                            <div class="jackpot-display"><?php echo $data['jackpot']; ?></div>
                         </div>
             
-                        <ul class="balls-row" style="padding: 10px 0;">
+                        <ul class="balls-row" aria-label="Winning Numbers">
                             <?php foreach($data['numbers'] as $num): ?>
                                 <li class="ball"><?php echo $num; ?></li>
                             <?php endforeach; ?>
                             
                             <?php if($data['bonus']): ?>
-                                <li class="ball bonus" title="Bonus Ball"><?php echo $data['bonus']; ?></li>
+                                <li class="ball bonus" aria-label="Bonus Ball"><?php echo $data['bonus']; ?></li>
                             <?php endif; ?>
                         </ul>
             
                         <div class="advanced-stats">
                             <div class="stat-box">
-                                <div class="stat-lbl">Odd/Even</div>
+                                <div class="stat-lbl">Odd / Even Ratio</div>
                                 <div class="stat-val"><?php echo $data['stats']['odd_even']; ?></div>
                             </div>
                             <div class="stat-box">
-                                <div class="stat-lbl">High/Low</div>
+                                <div class="stat-lbl">High / Low Ratio</div>
                                 <div class="stat-val"><?php echo $data['stats']['high_low']; ?></div>
                             </div>
                         </div>
                     </div>
                 <?php endforeach; ?>
                 
-                <div style="margin-top: 32px;">
-                     <a href="/history/dailylotto" id="dynamic-history-link" class="btn btn-outline" style="border-width: 1.5px; letter-spacing: 0.3px;">
-                        View Full Daily Lotto History
-                     </a>
-                </div>
+                <a href="/history/dailylotto" id="dynamic-history-link" class="btn btn-outline">
+                    View Full Daily Lotto History
+                </a>
             </section>
 
             <aside>
                 <div class="card" style="margin-bottom: 24px;">
                     <div class="sidebar-header">
-                        <h2 style="font-size: 1.25rem; font-weight: 700;">Trend Analysis</h2>
-                        <span id="dynamic-sidebar-label" class="dynamic-game-label">PowerBall</span>
+                        <h2>Trend Analysis</h2>
+                        <span id="dynamic-sidebar-label" class="dynamic-game-label">Daily Lotto</span>
                     </div>
                     
                     <div class="utility-row">
-                        <span style="font-weight: 600; color: var(--text-main);">Sizzling Hot</span>
-                        <ul class="mini-balls" id="dyn-hot-numbers">
-                            <!-- Filled by JS -->
-                        </ul>
+                        <span class="utility-label">Sizzling Hot</span>
+                        <ul class="mini-balls" id="dyn-hot-numbers" aria-label="Hot Numbers">
+                            </ul>
                     </div>
 
                     <div class="utility-row">
-                        <span style="font-weight: 600; color: var(--text-main);">Freezing Cold</span>
-                        <ul class="mini-balls" id="dyn-cold-numbers">
-                            <!-- Filled by JS -->
-                        </ul>
+                        <span class="utility-label">Freezing Cold</span>
+                        <ul class="mini-balls" id="dyn-cold-numbers" aria-label="Cold Numbers">
+                            </ul>
                     </div>
 
-                    <div class="utility-row" style="border-bottom: none;">
-                        <span style="font-weight: 600; color: var(--text-main);">Top Pairs</span>
-                        <div style="display: flex; gap: 8px;" id="dyn-frequent-pairs">
-                            <!-- Filled by JS -->
-                        </div>
+                    <div class="utility-row">
+                        <span class="utility-label">Top Pairs</span>
+                        <div style="display: flex; gap: 8px;" id="dyn-frequent-pairs" aria-label="Frequent Pairs">
+                            </div>
                     </div>
                 </div>
 
                 <div class="generator-box" id="generator">
-                    <h3 style="margin-bottom: 8px;">Smart Generator</h3>
-                    <p style="font-size: 0.875rem; color: #94a3b8;">Uses standard deviation algorithms specific to <span id="dyn-gen-label" style="color: white; font-weight: bold;">PowerBall</span>.</p>
+                    <h3>Smart Generator</h3>
+                    <p class="gen-desc">Uses algorithmic variance specific to <span id="dyn-gen-label">Daily Lotto</span>.</p>
                     
-                    <div class="gen-result" id="generated-numbers">
-                        -- -- -- -- --
+                    <div class="gen-result" id="generated-numbers" aria-live="polite">
+                        <div class="gen-ball">-</div>
+                        <div class="gen-ball">-</div>
+                        <div class="gen-ball">-</div>
+                        <div class="gen-ball">-</div>
+                        <div class="gen-ball">-</div>
                     </div>
                     
-                    <button class="btn" style="background: var(--accent-gold); color: #78350f; box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);" onclick="generateTicket()">Generate Algorithm Pick</button>
+                    <button class="btn btn-gold" id="generate-btn" onclick="generateTicket()">Generate Algorithm Pick</button>
                 </div>
             </aside>
         </div>
     </main>
 
     <script>
-        // Import the PHP data directly into a JavaScript object
+        // High-Performance Data Injection
         const appData = <?php echo $jsonData; ?>;
+        let currentGame = 'dailylotto';
+        let isGenerating = false;
+
+        // Efficient DOM Rendering Functions
+        const renderMiniBalls = (numbers, type) => numbers.map(num => `<li class="mini-ball ${type}">${num}</li>`).join('');
+        const renderPairs = (pairs) => pairs.map(pair => `<span class="pair-badge">${pair}</span>`).join('');
         
-        // Track current game for the generator
-        let currentGame = 'powerball';
-
-        // Function to render mini balls in the sidebar
-        function renderMiniBalls(numbers, type) {
-            return numbers.map(num => `<li class="mini-ball ${type}">${num}</li>`).join('');
-        }
-
-        // Function to render pairs in the sidebar
-        function renderPairs(pairs) {
-            return pairs.map(pair => `<span class="pair-badge">${pair}</span>`).join('');
-        }
-
-        // Main Tab Switching & SPA Logic
-        function switchTab(gameId) {
+        // Tab Switching Logic
+        function switchTab(gameId, btnElement) {
+            if(isGenerating) return; // Prevent switching while generating numbers
             currentGame = gameId;
             const data = appData[gameId];
 
-            // 1. Update Tabs UI
-            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-            document.querySelectorAll('.tab-content').forEach(content => {
-                content.classList.remove('active');
-                content.style.opacity = '0'; // For smooth fade
+            // 1. Update Tabs with Accessibility
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-selected', 'false');
             });
-            
-            // Find the clicked button and set it active
-            const activeBtn = Array.from(document.querySelectorAll('.tab-btn')).find(
-                btn => btn.textContent.trim().toLowerCase().includes(gameId.replace('plus', ' Plus'))
-            );
-            if (activeBtn) activeBtn.classList.add('active');
-            
-            const targetContent = document.getElementById(gameId + '-content');
-            targetContent.classList.add('active');
-            setTimeout(() => targetContent.style.opacity = '1', 50);
+            btnElement.classList.add('active');
+            btnElement.setAttribute('aria-selected', 'true');
 
-            // 2. Update Dynamic History Link at the bottom of the left column
-            const historyLink = document.getElementById('dynamic-history-link');
-            historyLink.href = `/history/${gameId}`;
-            historyLink.innerText = `View Full ${data.name} History`;
+            // 2. Toggle Content Visibility safely
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            document.getElementById(`${gameId}-content`).classList.add('active');
 
-            // 3. Update the Right Sidebar Headers
+            // 3. Update Dynamic UI Elements
+            document.getElementById('dynamic-history-link').href = `/history/${gameId}`;
+            document.getElementById('dynamic-history-link').innerText = `View Full ${data.name} History`;
             document.getElementById('dynamic-sidebar-label').innerText = data.name;
             document.getElementById('dyn-gen-label').innerText = data.name;
 
-            // 4. Update the Analytics Data (Hot/Cold/Pairs)
+            // 4. Populate Analytics
             document.getElementById('dyn-hot-numbers').innerHTML = renderMiniBalls(data.analytics.hot, 'hot');
             document.getElementById('dyn-cold-numbers').innerHTML = renderMiniBalls(data.analytics.cold, 'cold');
             document.getElementById('dyn-frequent-pairs').innerHTML = renderPairs(data.analytics.pairs);
             
-            // 5. Reset Generator Display
-            document.getElementById('generated-numbers').innerHTML = '-- -- -- -- --';
+            // 5. Reset Generator
+            resetGeneratorUI(data.rules.draw_size, data.rules.has_bonus);
         }
 
-        // Context-Aware Smart Generator Logic
+        // Initialize UI placeholders for the generator
+        function resetGeneratorUI(drawSize, hasBonus) {
+            let html = '';
+            for(let i=0; i<drawSize; i++) html += `<div class="gen-ball">-</div>`;
+            if(hasBonus) html += `<div class="gen-ball bonus-pick">-</div>`;
+            document.getElementById('generated-numbers').innerHTML = html;
+        }
+
+        // Advanced Generator UX: Simulates a rolling draw
         function generateTicket() {
-            const rules = appData[currentGame].rules;
-            const resultDiv = document.getElementById('generated-numbers');
+            if(isGenerating) return;
+            isGenerating = true;
             
-            // Loading state
-            resultDiv.innerHTML = '<span style="font-size: 1rem; color: #94a3b8; letter-spacing: 0;">Calculating parameters...</span>';
-            resultDiv.style.opacity = '0.5';
+            const btn = document.getElementById('generate-btn');
+            const resultDiv = document.getElementById('generated-numbers');
+            const rules = appData[currentGame].rules;
+            
+            btn.innerText = "Calculating...";
+            btn.style.opacity = "0.7";
 
-            setTimeout(() => {
-                let numbers = [];
-                // Generate main balls based on game specific rules
-                while(numbers.length < rules.draw_size){
-                    let r = Math.floor(Math.random() * rules.max_num) + 1;
-                    if(numbers.indexOf(r) === -1) numbers.push(r);
+            let ticks = 0;
+            const maxTicks = 20; // Number of animation frames
+            
+            // Interval simulating the random "rolling" of balls
+            const rollInterval = setInterval(() => {
+                let tempHtml = '';
+                for(let i=0; i<rules.draw_size; i++) {
+                    const rand = Math.floor(Math.random() * rules.max_num) + 1;
+                    tempHtml += `<div class="gen-ball">${rand}</div>`;
                 }
-                numbers.sort((a,b) => a - b);
-                
-                // Format main numbers
-                let formatted = numbers.map(n => n.toString().padStart(2, '0')).join(' &nbsp; ');
-                
-                // Append Bonus Ball if the game requires it
                 if(rules.has_bonus) {
-                    let bonusNum = Math.floor(Math.random() * rules.bonus_max) + 1;
-                    formatted += ` <span style="color: white; margin: 0 10px;">|</span> <span style="color: #fbbf24;">${bonusNum.toString().padStart(2, '0')}</span>`;
+                    const randB = Math.floor(Math.random() * rules.bonus_max) + 1;
+                    tempHtml += `<div class="gen-ball bonus-pick">${randB}</div>`;
                 }
-                
-                resultDiv.innerHTML = formatted;
-                resultDiv.style.opacity = '1';
-            }, 500); 
+                resultDiv.innerHTML = tempHtml;
+                ticks++;
+
+                if(ticks >= maxTicks) {
+                    clearInterval(rollInterval);
+                    finalizeTicket(rules, resultDiv, btn);
+                }
+            }, 60);
         }
 
-        // Initialize the sidebar on first load
+        // Finalize standard deviation pick after animation
+        function finalizeTicket(rules, resultDiv, btn) {
+            let numbers = [];
+            while(numbers.length < rules.draw_size) {
+                let r = Math.floor(Math.random() * rules.max_num) + 1;
+                if(numbers.indexOf(r) === -1) numbers.push(r);
+            }
+            numbers.sort((a,b) => a - b);
+            
+            let finalHtml = numbers.map(n => `<div class="gen-ball">${n}</div>`).join('');
+            
+            if(rules.has_bonus) {
+                let bonusNum = Math.floor(Math.random() * rules.bonus_max) + 1;
+                finalHtml += `<div class="gen-ball bonus-pick">${bonusNum}</div>`;
+            }
+            
+            resultDiv.innerHTML = finalHtml;
+            btn.innerText = "Generate Algorithm Pick";
+            btn.style.opacity = "1";
+            isGenerating = false;
+        }
+
+        // Init on load
         window.onload = () => {
-            switchTab('powerball'); 
+            const defaultData = appData['dailylotto'];
+            document.getElementById('dyn-hot-numbers').innerHTML = renderMiniBalls(defaultData.analytics.hot, 'hot');
+            document.getElementById('dyn-cold-numbers').innerHTML = renderMiniBalls(defaultData.analytics.cold, 'cold');
+            document.getElementById('dyn-frequent-pairs').innerHTML = renderPairs(defaultData.analytics.pairs);
         };
     </script>
 </body>
