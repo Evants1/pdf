@@ -1,245 +1,8 @@
 https://navajowhite-ibis-659787.hostingersite.com https://lightcoral-llama-726341.hostingersite.com/ https://powderblue-curlew-144374.hostingersite.com/  https://lightslategray-pony-225861.hostingersite.com/
 
-
-
-========================================
-[2026-04-28 01:46:47 SAST] Cron Execution Started
-Running past midnight. Fetching results for yesterday: 2026-04-27
-Daily Lotto: Inserted Successfully
-Lotto: No data for this date.
-Lotto Plus 1: No data for this date.
-Lotto Plus 2: No data for this date.
-PowerBall: No data for this date.
-PowerBall Plus: No data for this date.
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-04-29 06:04:50 SAST] Cron Execution Started
-Fetching results for today: 2026-04-29
-Error: API connection failed. HTTP Code: 400
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-04-29 06:10:26 SAST] Cron Execution Started
-Early morning run. Fetching results for yesterday: 2026-04-28
-Daily Lotto: Inserted Successfully
-Lotto: No data.
-Lotto Plus 1: No data.
-Lotto Plus 2: No data.
-PowerBall: Inserted Successfully
-PowerBall Plus: Inserted Successfully
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-04-29 21:59:58 SAST] Cron Execution Started
-Fetching results for today: 2026-04-29
-Error: API connection failed. HTTP Code: 400
-Full API Response Body: {&quot;message&quot;:&quot;Could not fetch results for the specified date&quot;,&quot;status&quot;:&quot;error&quot;}
-
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-04-30 05:25:25 SAST] Cron Execution Started
-Early morning run. Fetching results for yesterday: 2026-04-29
-Error: API connection failed. HTTP Code: 400
-Full API Response Body: {&quot;message&quot;:&quot;Could not fetch results for the specified date&quot;,&quot;status&quot;:&quot;error&quot;}
-
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-04-30 05:31:22 SAST] Cron Execution Started
-Early morning run. Fetching results for yesterday: 2026-04-29
-Error: API connection failed. HTTP Code: 400
-Full API Response Body: {&quot;message&quot;:&quot;Could not fetch results for the specified date&quot;,&quot;status&quot;:&quot;error&quot;}
-
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-04-30 05:39:36 SAST] Cron Execution Started
-INFO: Early morning run. Targeting yesterday: 2026-04-29
-STATUS: API returned HTTP 400.
-REASON: The results for 2026-04-29 are not yet published by the API provider. The cron will automatically try again on the next run.
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-04-30 05:48:18 SAST] Cron Execution Started
-INFO: Early morning run. Targeting yesterday: 2026-04-29
-STATUS: API returned HTTP 400.
-REASON: The results for 2026-04-29 are not yet published by the API provider. The cron will automatically try again on the next run.
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-04-30 09:46:56 SAST] Cron Execution Started
-INFO: Early morning run. Targeting yesterday: 2026-04-29
-Daily Lotto: Inserted
-Lotto: Inserted
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-04-30 09:47:00 SAST] Cron Execution Started
-INFO: Early morning run. Targeting yesterday: 2026-04-29
-SUCCESS: Results for 2026-04-29 are already in the database.
-ACTION: Skipping API call to save your credits.
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-04-30 19:01:53 SAST] Cron Execution Started
-INFO: Daytime/Evening run. Targeting today: 2026-04-30
-STATUS: API returned HTTP 400.
-REASON: The results for 2026-04-30 are not yet published by the API provider. The cron will automatically try again on the next run.
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-04-30 19:02:53 SAST] Cron Execution Started
-INFO: Daytime/Evening run. Targeting today: 2026-04-30
-STATUS: API returned HTTP 400.
-REASON: The results for 2026-04-30 are not yet published by the API provider. The cron will automatically try again on the next run.
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-05-01 07:00:04 SAST] Cron Execution Started
-INFO: Early morning run. Targeting yesterday: 2026-04-30
-Daily Lotto: Inserted
-Lotto: Inserted
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-05-01 07:21:07 SAST] Cron Execution Started
-INFO: Early morning run. Targeting yesterday: 2026-04-30
-Daily Lotto: Skipped (Already Exists)
-Lotto: Skipped (Already Exists)
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-05-01 22:45:03 SAST] Cron Execution Started
-INFO: Daytime/Evening run. Targeting today: 2026-05-01
-Daily Lotto: Inserted
-PowerBall: Inserted
-PowerBall Plus: Inserted
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-05-02 00:00:03 SAST] Cron Execution Started
-INFO: Early morning run. Targeting yesterday: 2026-05-01
-Daily Lotto: Skipped (Already Exists)
-PowerBall: Skipped (Already Exists)
-PowerBall Plus: Skipped (Already Exists)
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-05-02 22:45:03 SAST] Cron Execution Started
-INFO: Daytime/Evening run. Targeting today: 2026-05-02
-Daily Lotto: Inserted
-Lotto: Inserted
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-05-03 00:00:03 SAST] Cron Execution Started
-INFO: Early morning run. Targeting yesterday: 2026-05-02
-Daily Lotto: Skipped (Already Exists)
-Lotto: Skipped (Already Exists)
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-05-03 22:45:03 SAST] Cron Execution Started
-INFO: Daytime/Evening run. Targeting today: 2026-05-03
-Daily Lotto: Inserted
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-05-04 00:00:03 SAST] Cron Execution Started
-INFO: Early morning run. Targeting yesterday: 2026-05-03
-Daily Lotto: Skipped (Already Exists)
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-05-04 22:45:03 SAST] Cron Execution Started
-INFO: Daytime/Evening run. Targeting today: 2026-05-04
-Daily Lotto: Inserted
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-05-05 00:00:03 SAST] Cron Execution Started
-INFO: Early morning run. Targeting yesterday: 2026-05-04
-Daily Lotto: Skipped (Already Exists)
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-05-05 22:45:03 SAST] Cron Execution Started
-INFO: Daytime/Evening run. Targeting today: 2026-05-05
-Daily Lotto: Inserted
-PowerBall: Inserted
-PowerBall Plus: Inserted
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-05-06 00:00:03 SAST] Cron Execution Started
-INFO: Early morning run. Targeting yesterday: 2026-05-05
-Daily Lotto: Skipped/Exists
-PowerBall: Skipped/Exists/InvalidDay
-PowerBall Plus: Skipped/Exists/InvalidDay
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-05-06 22:45:03 SAST] Cron Execution Started
-INFO: Daytime/Evening run. Targeting today: 2026-05-06
-Daily Lotto: Inserted
-Lotto: Inserted
-Auto-Update Finished.
-========================================
-
-========================================
-[2026-05-07 00:00:04 SAST] Cron Execution Started
-INFO: Early morning run. Targeting yesterday: 2026-05-06
-Daily Lotto: Skipped/Exists
-Lotto: Skipped/Exists/InvalidDay
-Auto-Update Finished.
-========================================
-
-
-
 <?php
-// Prevent timeouts for background execution
-set_time_limit(120); 
 
-// CRITICAL FIX: Set timezone to South Africa
-date_default_timezone_set('Africa/Johannesburg');
-
-// Connect to your database
-require_once __DIR__ . '/db.php';
-
-$apiKey = "5db296ba3e566384fcfae279c702e052"; 
-$logFile = __DIR__ . '/cron_log.txt';
-$logOutput = "\n========================================\n";
-$logOutput .= "[" . date('Y-m-d H:i:s') . " SAST] Cron Execution Started\n";
-
-// --- TARGET DATE LOGIC ---
-$currentHour = (int)date('H');
-// If running early in the morning, look for yesterday's results
+// Assuming $currentHour, $logOutput, $apiKey, $pdo, and $logFile are defined above this block
 if ($currentHour >= 0 && $currentHour <= 10) {
     $targetDate = date('Y-m-d', strtotime('-1 day'));
     $logOutput .= "INFO: Early morning run. Targeting yesterday: {$targetDate}\n";
@@ -252,12 +15,11 @@ if ($currentHour >= 0 && $currentHour <= 10) {
 // FETCH FROM API
 // ==========================================
 $apiUrl = "https://resultsZA.co.za/api/get_latest_results?api_key={$apiKey}&date={$targetDate}";
-
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $apiUrl);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); 
-curl_setopt($ch, CURLOPT_TIMEOUT, 30); 
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($ch, CURLOPT_TIMEOUT, 30);
 curl_setopt($ch, CURLOPT_USERAGENT, 'LottoGenius-Auto-Cron');
 $response = curl_exec($ch);
 $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
@@ -266,6 +28,11 @@ curl_close($ch);
 if ($httpCode === 200 && $response) {
     $apiData = json_decode($response, true);
     
+    // --- FIX A: TEMPORARY DEBUG LOG ---
+    // This will save the exact API response to a file so you can see the correct keys
+    file_put_contents('api_debug.json', json_encode($apiData, JSON_PRETTY_PRINT));
+    // ----------------------------------
+
     if (isset($apiData['status']) && $apiData['status'] === 'success') {
         
         // --- Universal Game Processor ---
@@ -273,17 +40,17 @@ if ($httpCode === 200 && $response) {
             function processStandardGame($pdo, $gameData, $tableName, $isPowerBall) {
                 $drawDate = $gameData['date'] ?? null;
                 if (!$drawDate) return 0;
-                
+
                 // STRICT DAY OF WEEK CHECK (1=Mon, 2=Tue, 3=Wed, 4=Thu, 5=Fri, 6=Sat, 7=Sun)
                 $dayOfWeek = (int)date('N', strtotime($drawDate));
-                
+
                 // Lotto Games: Wednesday (3) & Saturday (6) ONLY
                 if (strpos($tableName, 'lotto') !== false && strpos($tableName, 'daily') === false) {
                     if ($dayOfWeek !== 3 && $dayOfWeek !== 6) {
                         return 0; // Skip: Not a valid Lotto draw day
                     }
                 }
-                
+
                 // PowerBall Games: Tuesday (2) & Friday (5) ONLY
                 if (strpos($tableName, 'powerball') !== false) {
                     if ($dayOfWeek !== 2 && $dayOfWeek !== 5) {
@@ -296,39 +63,51 @@ if ($httpCode === 200 && $response) {
 
                 $bonus = $gameData['powerball'] ?? $gameData['bonus_ball'] ?? null;
                 $divs = $gameData['divisions'] ?? [];
-                
+
                 if ($isPowerBall) {
                     $stmt = $pdo->prepare("INSERT IGNORE INTO $tableName (
                         draw_date, draw_number, machine_name, total_pool_size, total_sales, rollover_number,
                         ball_1, ball_2, ball_3, ball_4, ball_5, powerball,
-                        div1_winners, div1_amount, div2_winners, div2_amount, div3_winners, div3_amount, div4_winners, div4_amount,
-                        div5_winners, div5_amount, div6_winners, div6_amount, div7_winners, div7_amount, div8_winners, div8_amount, div9_winners, div9_amount
+                        div1_winners, div1_amount, div2_winners, div2_amount, div3_winners, div3_amount,
+                        div4_winners, div4_amount, div5_winners, div5_amount, div6_winners, div6_amount,
+                        div7_winners, div7_amount, div8_winners, div8_amount, div9_winners, div9_amount
                     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
                     
                     $stmt->execute([
-                        $drawDate, $gameData['draw_id']??null, $gameData['draw_machine']??null, $gameData['total_pool_size']??0, $gameData['total_sales']??0, $gameData['rollover_number']??0,
+                        $drawDate, $gameData['draw_id']??null, $gameData['draw_machine']??null,
+                        $gameData['total_pool_size']??0, $gameData['total_sales']??0, $gameData['rollover_number']??0,
                         $balls[0]??null, $balls[1]??null, $balls[2]??null, $balls[3]??null, $balls[4]??null, $bonus,
-                        $divs[0]['winners']??0, $divs[0]['winning_amount']??0, $divs[1]['winners']??0, $divs[1]['winning_amount']??0,
-                        $divs[2]['winners']??0, $divs[2]['winning_amount']??0, $divs[3]['winners']??0, $divs[3]['winning_amount']??0,
-                        $divs[4]['winners']??0, $divs[4]['winning_amount']??0, $divs[5]['winners']??0, $divs[5]['winning_amount']??0,
-                        $divs[6]['winners']??0, $divs[6]['winning_amount']??0, $divs[7]['winners']??0, $divs[7]['winning_amount']??0,
+                        $divs[0]['winners']??0, $divs[0]['winning_amount']??0,
+                        $divs[1]['winners']??0, $divs[1]['winning_amount']??0,
+                        $divs[2]['winners']??0, $divs[2]['winning_amount']??0,
+                        $divs[3]['winners']??0, $divs[3]['winning_amount']??0,
+                        $divs[4]['winners']??0, $divs[4]['winning_amount']??0,
+                        $divs[5]['winners']??0, $divs[5]['winning_amount']??0,
+                        $divs[6]['winners']??0, $divs[6]['winning_amount']??0,
+                        $divs[7]['winners']??0, $divs[7]['winning_amount']??0,
                         $divs[8]['winners']??0, $divs[8]['winning_amount']??0
                     ]);
                 } else {
                     $stmt = $pdo->prepare("INSERT IGNORE INTO $tableName (
                         draw_date, draw_number, machine_name, total_pool_size, total_sales, rollover_number,
                         ball_1, ball_2, ball_3, ball_4, ball_5, ball_6, bonus_ball,
-                        div1_winners, div1_amount, div2_winners, div2_amount, div3_winners, div3_amount, div4_winners, div4_amount,
-                        div5_winners, div5_amount, div6_winners, div6_amount, div7_winners, div7_amount, div8_winners, div8_amount
+                        div1_winners, div1_amount, div2_winners, div2_amount, div3_winners, div3_amount,
+                        div4_winners, div4_amount, div5_winners, div5_amount, div6_winners, div6_amount,
+                        div7_winners, div7_amount, div8_winners, div8_amount
                     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
                     
                     $stmt->execute([
-                        $drawDate, $gameData['draw_id']??null, $gameData['draw_machine']??null, $gameData['total_pool_size']??0, $gameData['total_sales']??0, $gameData['rollover_number']??0,
+                        $drawDate, $gameData['draw_id']??null, $gameData['draw_machine']??null,
+                        $gameData['total_pool_size']??0, $gameData['total_sales']??0, $gameData['rollover_number']??0,
                         $balls[0]??null, $balls[1]??null, $balls[2]??null, $balls[3]??null, $balls[4]??null, $balls[5]??null, $bonus,
-                        $divs[0]['winners']??0, $divs[0]['winning_amount']??0, $divs[1]['winners']??0, $divs[1]['winning_amount']??0,
-                        $divs[2]['winners']??0, $divs[2]['winning_amount']??0, $divs[3]['winners']??0, $divs[3]['winning_amount']??0,
-                        $divs[4]['winners']??0, $divs[4]['winning_amount']??0, $divs[5]['winners']??0, $divs[5]['winning_amount']??0,
-                        $divs[6]['winners']??0, $divs[6]['winning_amount']??0, $divs[7]['winners']??0, $divs[7]['winning_amount']??0
+                        $divs[0]['winners']??0, $divs[0]['winning_amount']??0,
+                        $divs[1]['winners']??0, $divs[1]['winning_amount']??0,
+                        $divs[2]['winners']??0, $divs[2]['winning_amount']??0,
+                        $divs[3]['winners']??0, $divs[3]['winning_amount']??0,
+                        $divs[4]['winners']??0, $divs[4]['winning_amount']??0,
+                        $divs[5]['winners']??0, $divs[5]['winning_amount']??0,
+                        $divs[6]['winners']??0, $divs[6]['winning_amount']??0,
+                        $divs[7]['winners']??0, $divs[7]['winning_amount']??0
                     ]);
                 }
                 return $stmt->rowCount(); // Returns 1 if inserted, 0 if already existed (ignored)
@@ -341,12 +120,16 @@ if ($httpCode === 200 && $response) {
             $stmt = $pdo->prepare("INSERT IGNORE INTO daily_lotto_results (
                 draw_date, draw_number, machine_name, total_pool_size, total_sales, rollover_number,
                 ball_1, ball_2, ball_3, ball_4, ball_5,
-                div1_winners, div1_amount, div2_winners, div2_amount, div3_winners, div3_amount, div4_winners, div4_amount
+                div1_winners, div1_amount, div2_winners, div2_amount,
+                div3_winners, div3_amount, div4_winners, div4_amount
             ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
             
             $stmt->execute([
-                $game['date'], $game['draw_id']??null, $game['draw_machine']??null, $game['total_pool_size']??0, $game['total_sales']??0, 0,
-                $game['winning_numbers'][0]??null, $game['winning_numbers'][1]??null, $game['winning_numbers'][2]??null, $game['winning_numbers'][3]??null, $game['winning_numbers'][4]??null,
+                $game['date'], $game['draw_id']??null, $game['draw_machine']??null,
+                $game['total_pool_size']??0, $game['total_sales']??0, 0,
+                $game['winning_numbers'][0]??null, $game['winning_numbers'][1]??null,
+                $game['winning_numbers'][2]??null, $game['winning_numbers'][3]??null,
+                $game['winning_numbers'][4]??null,
                 $game['divisions'][0]['winners']??0, $game['divisions'][0]['winning_amount']??0,
                 $game['divisions'][1]['winners']??0, $game['divisions'][1]['winning_amount']??0,
                 $game['divisions'][2]['winners']??0, $game['divisions'][2]['winning_amount']??0,
@@ -355,7 +138,7 @@ if ($httpCode === 200 && $response) {
             $logOutput .= "Daily Lotto: " . ($stmt->rowCount() > 0 ? "Inserted\n" : "Skipped/Exists\n");
         }
 
-        // 2. Lotto Games (Expanded fallback keys to ensure we catch the Plus API data)
+        // 2. Lotto Games
         $lottoData = $apiData['results']['lotto_results'] ?? $apiData['results']['lotto'] ?? null;
         if ($lottoData) {
             $rows = processStandardGame($pdo, $lottoData, 'lotto_results', false);
@@ -366,12 +149,18 @@ if ($httpCode === 200 && $response) {
         if ($lottoP1Data) {
             $rows = processStandardGame($pdo, $lottoP1Data, 'lotto_plus_1_results', false);
             $logOutput .= "Lotto Plus 1: " . ($rows > 0 ? "Inserted\n" : "Skipped/Exists/InvalidDay\n");
+        } else {
+            // --- FIX B: Explicitly log if the data is missing ---
+            $logOutput .= "Lotto Plus 1: Skipped (Data missing from API response)\n";
         }
 
         $lottoP2Data = $apiData['results']['lotto_plus_2_results'] ?? $apiData['results']['lotto_plus_2'] ?? null;
         if ($lottoP2Data) {
             $rows = processStandardGame($pdo, $lottoP2Data, 'lotto_plus_2_results', false);
             $logOutput .= "Lotto Plus 2: " . ($rows > 0 ? "Inserted\n" : "Skipped/Exists/InvalidDay\n");
+        } else {
+            // --- FIX B: Explicitly log if the data is missing ---
+            $logOutput .= "Lotto Plus 2: Skipped (Data missing from API response)\n";
         }
 
         // 3. PowerBall Games
@@ -385,6 +174,9 @@ if ($httpCode === 200 && $response) {
         if ($pbPlusData) {
             $rows = processStandardGame($pdo, $pbPlusData, 'powerball_plus_results', true);
             $logOutput .= "PowerBall Plus: " . ($rows > 0 ? "Inserted\n" : "Skipped/Exists/InvalidDay\n");
+        } else {
+            // Also adding this here just in case PowerBall Plus ever goes missing!
+            $logOutput .= "PowerBall Plus: Skipped (Data missing from API response)\n";
         }
 
     } else {
@@ -405,5 +197,6 @@ file_put_contents($logFile, $logOutput, FILE_APPEND);
 
 // Output to browser for instant check
 echo nl2br($logOutput);
+
 ?>
 
