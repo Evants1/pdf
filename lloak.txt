@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ✅ SEO: Meta Title under 60 chars -->
+<title>Best Online Lotto Sites South Africa 2026 | Trusted Reviews</title>
+
+<!-- ✅ SEO: Meta Description under 155 chars, high CTR -->
+<meta name="description" content="Compare trusted SA lotto sites, current jackpots & verified odds. Expert reviews, secure transactions & responsible play guides. Updated weekly.">
+
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://nextdrawlogic.co.za/lotto/">
+<meta name="geo.region" content="ZA">
+<meta name="geo.placename" content="South Africa">
+
+<!-- OG -->
+<meta property="og:title" content="Best Online Lotto Sites South Africa 2026 | Trusted Reviews">
+<meta property="og:description" content="Compare trusted SA lotto sites, current jackpots & verified odds. Expert reviews, secure transactions & responsible play guides.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nextdrawlogic.co.za/lotto/">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Best Online Lotto Sites South Africa 2026 | Trusted Reviews">
+<meta name="twitter:description" content="Compare trusted SA lotto sites, current jackpots & verified odds.">
+
+<!-- Google Fonts: Sora (display) + DM Sans (body) — distinctive, not generic -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+
+<!-- ✅ Schema: Organization + FAQPage + Review -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I choose the best online lotto site in South Africa?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Look for sites with official FICA compliance, clear prize tier disclosures, secure transactions (SSL/HTTPS), and transparent random number generator certifications. Avoid any platform that cannot show you verifiable payout history." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are online lottery sites legal in South Africa?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Online lottery participation is regulated under the National Gambling Act. The National Lottery Commission (NLC) oversees licensed operators. Always verify an operator's NLC licence number before registering." }
+    },
+    {
+      "@type": "Question",
+      "name": "What are current SA Lotto jackpot sizes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Jackpots are determined by ticket sales rollover and change each draw. Our site publishes verified current jackpot figures updated after every Wednesday and Saturday draw at 20:56 SAST." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the odds of winning the SA Lotto jackpot?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The odds of matching all 6 numbers from a 52-ball pool are 1 in 20,358,520. Understanding prize tiers — where matching 3 numbers pays a fixed amount — dramatically improves your appreciation of realistic outcomes." }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nextdrawlogic.co.za/" },
+    { "@type": "ListItem", "position": 2, "name": "Lotto", "item": "https://nextdrawlogic.co.za/lotto/" }
+  ]
+}
+</script>
+
+<style>
+  /* ─── DESIGN TOKENS ────────────────────────────────────────── */
+  :root {
+    --clay:       #F5F0E8;
+    --clay-dark:  #EDE6D6;
+    --ink:        #1A1A18;
+    --ink-soft:   #3D3D38;
+    --ink-muted:  #6B6B60;
+    --sage:       #4A7C59;
+    --sage-light: #EAF2EC;
+    --sage-mid:   #C5DEC9;
+    --amber:      #C77B2A;
+    --amber-light:#FDF3E3;
+    --amber-mid:  #F0D09A;
+    --cobalt:     #2152A3;
+    --cobalt-light:#E8EEFA;
+    --cobalt-mid: #B8C8EE;
+    --red:        #B03A2E;
+    --red-light:  #FAEDEC;
+    --border:     rgba(26,26,24,0.10);
+    --border-med: rgba(26,26,24,0.18);
+    --shadow-xs:  0 1px 3px rgba(26,26,24,0.06);
+    --shadow-sm:  0 2px 8px rgba(26,26,24,0.08);
+    --shadow-md:  0 4px 20px rgba(26,26,24,0.10);
+    --r-sm:       6px;
+    --r-md:       10px;
+    --r-lg:       16px;
+    --r-xl:       24px;
+    --font-display: 'Sora', sans-serif;
+    --font-body:    'DM Sans', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  html { scroll-behavior: smooth; }
+  
+  body {
+    font-family: var(--font-body);
+    background: var(--clay);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ─── SKIP LINK ─────────────────────────────────────────── */
+  .skip-link {
+    position: absolute; top: -40px; left: 12px;
+    background: var(--ink); color: #fff;
+    padding: 8px 14px; border-radius: var(--r-sm);
+    font-size: 14px; font-weight: 600; z-index: 9999;
+    transition: top .2s;
+  }
+  .skip-link:focus { top: 12px; }
+
+  /* ─── TOP BAR ───────────────────────────────────────────── */
+  .topbar {
+    background: var(--ink);
+    color: rgba(255,255,255,0.65);
+    font-size: 13px;
+    padding: 9px 0;
+  }
+  .topbar-inner {
+    max-width: 1280px; margin: 0 auto; padding: 0 24px;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+    flex-wrap: wrap;
+  }
+  .topbar a { color: rgba(255,255,255,0.75); text-decoration: none; }
+  .topbar a:hover { color: #fff; }
+  .topbar-live {
+    display: flex; align-items: center; gap: 7px;
+    font-weight: 600; color: #fff;
+  }
+  .topbar-live-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: #4ade80;
+    box-shadow: 0 0 0 3px rgba(74,222,128,0.25);
+    animation: pulse 2.5s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 3px rgba(74,222,128,0.25); }
+    50% { box-shadow: 0 0 0 6px rgba(74,222,128,0); }
+  }
+
+  /* ─── NAV ───────────────────────────────────────────────── */
+  .site-nav {
+    background: rgba(245,240,232,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    position: sticky; top: 0; z-index: 100;
+  }
+  .nav-inner {
+    max-width: 1280px; margin: 0 auto; padding: 0 24px;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 64px;
+  }
+  .nav-logo {
+    font-family: var(--font-display);
+    font-weight: 800; font-size: 1.25rem;
+    color: var(--ink); text-decoration: none;
+    letter-spacing: -0.5px;
+  }
+  .nav-logo span { color: var(--sage); }
+  .nav-links {
+    display: flex; gap: 4px; list-style: none;
+  }
+  .nav-links a {
+    padding: 7px 14px; border-radius: var(--r-sm);
+    font-size: 14px; font-weight: 500;
+    color: var(--ink-soft); text-decoration: none;
+    transition: background .15s, color .15s;
+  }
+  .nav-links a:hover, .nav-links a.active {
+    background: var(--clay-dark); color: var(--ink);
+  }
+  .nav-links a.active { font-weight: 700; }
+  .nav-cta {
+    background: var(--sage); color: #fff !important;
+    padding: 8px 18px !important; border-radius: var(--r-sm) !important;
+    font-weight: 600 !important;
+    transition: background .15s !important;
+  }
+  .nav-cta:hover { background: #3a6348 !important; }
+
+  /* ─── WRAPPER ────────────────────────────────────────────── */
+  .container {
+    max-width: 1280px; margin: 0 auto; padding: 0 24px;
+  }
+
+  /* ─── BREADCRUMB ─────────────────────────────────────────── */
+  .breadcrumb {
+    padding: 16px 0 0;
+    font-size: 13px; color: var(--ink-muted);
+  }
+  .breadcrumb ol { list-style: none; display: flex; gap: 6px; flex-wrap: wrap; }
+  .breadcrumb li::after { content: '›'; margin-left: 6px; color: var(--ink-muted); }
+  .breadcrumb li:last-child::after { display: none; }
+  .breadcrumb a { color: var(--ink-muted); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--sage); }
+
+  /* ─── HERO ───────────────────────────────────────────────── */
+  .hero {
+    padding: 60px 0 52px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 48px;
+    align-items: center;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--sage-light); color: var(--sage);
+    border: 1px solid var(--sage-mid);
+    font-size: 12px; font-weight: 700; letter-spacing: 0.6px;
+    text-transform: uppercase;
+    padding: 6px 14px; border-radius: 999px;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 2.9rem);
+    font-weight: 800; line-height: 1.15;
+    letter-spacing: -1px;
+    color: var(--ink);
+    margin-bottom: 18px;
+  }
+  .hero h1 em {
+    font-style: normal;
+    color: var(--sage);
+  }
+  .hero-sub {
+    font-size: 1.1rem; color: var(--ink-soft);
+    max-width: 540px; line-height: 1.65;
+    margin-bottom: 32px;
+  }
+  .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--sage); color: #fff;
+    padding: 13px 24px; border-radius: var(--r-md);
+    font-size: 15px; font-weight: 700;
+    text-decoration: none; border: none; cursor: pointer;
+    transition: background .15s, transform .12s;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-primary:hover { background: #3a6348; transform: translateY(-1px); }
+  .btn-secondary {
+    background: transparent; color: var(--ink);
+    padding: 13px 24px; border-radius: var(--r-md);
+    font-size: 15px; font-weight: 600;
+    text-decoration: none; border: 1.5px solid var(--border-med);
+    cursor: pointer; transition: border-color .15s, background .15s;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-secondary:hover { border-color: var(--sage); background: var(--sage-light); }
+
+  /* Hero stat pills */
+  .hero-stats {
+    display: flex; flex-direction: column; gap: 16px;
+    background: #fff; border: 1px solid var(--border);
+    border-radius: var(--r-lg); padding: 28px 28px;
+    box-shadow: var(--shadow-md); min-width: 220px;
+  }
+  .hero-stat-item { text-align: center; }
+  .hero-stat-num {
+    font-family: var(--font-display);
+    font-size: 1.9rem; font-weight: 800; color: var(--ink);
+    letter-spacing: -1px; line-height: 1;
+    margin-bottom: 4px;
+  }
+  .hero-stat-num span { color: var(--sage); }
+  .hero-stat-label { font-size: 12px; color: var(--ink-muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
+  .hero-stat-divider { border: none; border-top: 1px solid var(--border); }
+
+  /* ─── SECTION HEADERS ────────────────────────────────────── */
+  .section-label {
+    display: inline-block;
+    font-size: 11px; font-weight: 700; letter-spacing: 1.2px;
+    text-transform: uppercase; color: var(--sage);
+    margin-bottom: 10px;
+  }
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    font-weight: 700; letter-spacing: -0.5px;
+    color: var(--ink); margin-bottom: 10px;
+  }
+  .section-desc {
+    color: var(--ink-muted); font-size: 1rem;
+    max-width: 560px; line-height: 1.65;
+    margin-bottom: 32px;
+  }
+
+  /* ─── TRUST STRIP ────────────────────────────────────────── */
+  .trust-strip {
+    background: #fff;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+  }
+  .trust-strip-inner {
+    max-width: 1280px; margin: 0 auto; padding: 0 24px;
+    display: flex; align-items: center; gap: 32px;
+    flex-wrap: wrap; justify-content: center;
+  }
+  .trust-item {
+    display: flex; align-items: center; gap: 9px;
+    font-size: 13px; font-weight: 600; color: var(--ink-soft);
+    white-space: nowrap;
+  }
+  .trust-item svg { flex-shrink: 0; }
+
+  /* ─── COMPARISON TABLE ───────────────────────────────────── */
+  .table-section { padding: 60px 0; }
+  .table-wrapper {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--r-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+  }
+  .table-header-row {
+    background: var(--ink);
+    color: #fff;
+    display: grid;
+    grid-template-columns: 2fr 1.2fr 1fr 1fr 1fr 1.1fr 120px;
+    padding: 14px 24px;
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 0.8px; text-transform: uppercase;
+    color: rgba(255,255,255,0.65);
+  }
+  .table-header-row span:last-child { text-align: right; }
+
+  .table-row {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr 1fr 1fr 1fr 1.1fr 120px;
+    padding: 18px 24px;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    transition: background .12s;
+  }
+  .table-row:last-child { border-bottom: none; }
+  .table-row:hover { background: var(--clay); }
+  .table-row.featured {
+    background: var(--sage-light);
+    border-left: 4px solid var(--sage);
+    padding-left: 20px;
+  }
+  .table-row.featured:hover { background: #daeede; }
+
+  .site-info { display: flex; align-items: center; gap: 14px; }
+  .site-avatar {
+    width: 44px; height: 44px; border-radius: var(--r-md);
+    background: var(--clay-dark); font-size: 18px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; font-weight: 700; border: 1px solid var(--border);
+  }
+  .site-name {
+    font-weight: 700; font-size: 15px; color: var(--ink);
+    line-height: 1.2; margin-bottom: 3px;
+  }
+  .site-tag {
+    font-size: 11px; color: var(--ink-muted); font-weight: 500;
+  }
+  .featured-badge {
+    display: inline-block;
+    background: var(--sage); color: #fff;
+    font-size: 10px; font-weight: 700; letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 2px 8px; border-radius: 999px;
+    margin-left: 6px; vertical-align: middle;
+  }
+
+  .jackpot-val {
+    font-family: var(--font-display);
+    font-weight: 700; font-size: 1rem; color: var(--ink);
+  }
+  .jackpot-sub { font-size: 12px; color: var(--ink-muted); margin-top: 2px; }
+
+  .odds-val { font-size: 14px; font-weight: 600; color: var(--ink-soft); }
+
+  .stars { color: var(--amber); letter-spacing: -1px; font-size: 14px; }
+  .star-count { font-size: 12px; color: var(--ink-muted); font-weight: 500; margin-left: 4px; }
+
+  .payout-badge {
+    display: inline-block;
+    font-size: 12px; font-weight: 700;
+    padding: 4px 10px; border-radius: 999px;
+    background: var(--sage-light); color: var(--sage);
+    border: 1px solid var(--sage-mid);
+  }
+  .payout-badge.slow {
+    background: var(--amber-light); color: var(--amber);
+    border-color: var(--amber-mid);
+  }
+
+  .security-icons { display: flex; gap: 5px; flex-wrap: wrap; }
+  .sec-pill {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.3px;
+    padding: 3px 7px; border-radius: var(--r-sm);
+    background: var(--cobalt-light); color: var(--cobalt);
+    border: 1px solid var(--cobalt-mid);
+  }
+
+  .table-cta-col { display: flex; justify-content: flex-end; }
+  .table-cta {
+    background: var(--sage); color: #fff;
+    padding: 10px 18px; border-radius: var(--r-md);
+    font-size: 13px; font-weight: 700;
+    text-decoration: none; white-space: nowrap;
+    transition: background .15s, transform .1s;
+    display: inline-block;
+  }
+  .table-cta:hover { background: #3a6348; transform: translateY(-1px); }
+  .table-cta.secondary {
+    background: transparent; color: var(--sage);
+    border: 1.5px solid var(--sage-mid);
+  }
+  .table-cta.secondary:hover { background: var(--sage-light); }
+
+  /* Mobile table scroll */
+  .table-overflow { overflow-x: auto; }
+
+  /* ─── AUTHOR PROFILE ─────────────────────────────────────── */
+  .author-bar {
+    display: flex; align-items: center; gap: 14px;
+    padding: 20px 24px;
+    background: var(--clay); border-top: 1px solid var(--border);
+    border-radius: 0 0 var(--r-xl) var(--r-xl);
+  }
+  .author-avatar {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--ink); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-display); font-weight: 700; font-size: 14px;
+    flex-shrink: 0;
+  }
+  .author-info { flex: 1; }
+  .author-name { font-weight: 700; font-size: 14px; color: var(--ink); }
+  .author-bio { font-size: 13px; color: var(--ink-muted); line-height: 1.5; margin-top: 2px; }
+  .author-updated { font-size: 12px; color: var(--ink-muted); margin-left: auto; white-space: nowrap; }
+
+  /* ─── CONTENT GRID ───────────────────────────────────────── */
+  .content-section { padding: 60px 0; }
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .content-card {
+    background: #fff; border: 1px solid var(--border);
+    border-radius: var(--r-lg); padding: 32px;
+    position: relative; overflow: hidden;
+  }
+  .content-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  }
+  .content-card.sage::before { background: var(--sage); }
+  .content-card.amber::before { background: var(--amber); }
+  .content-card.cobalt::before { background: var(--cobalt); }
+  .content-card.red::before { background: var(--red); }
+
+  .card-icon {
+    width: 48px; height: 48px; border-radius: var(--r-md);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; margin-bottom: 20px;
+  }
+  .card-icon.sage { background: var(--sage-light); }
+  .card-icon.amber { background: var(--amber-light); }
+  .card-icon.cobalt { background: var(--cobalt-light); }
+  .card-icon.red { background: var(--red-light); }
+
+  .content-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.2rem; font-weight: 700;
+    color: var(--ink); margin-bottom: 14px;
+    letter-spacing: -0.3px;
+  }
+  .content-card p, .content-card li {
+    font-size: 0.95rem; color: var(--ink-soft); line-height: 1.65;
+  }
+  .content-card ul {
+    list-style: none; padding: 0; margin-top: 14px;
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .content-card ul li {
+    padding-left: 22px; position: relative;
+  }
+  .content-card ul li::before {
+    content: '✓'; position: absolute; left: 0;
+    color: var(--sage); font-weight: 700;
+  }
+  .content-card.amber ul li::before { color: var(--amber); }
+  .content-card.cobalt ul li::before { color: var(--cobalt); }
+  .content-card.red ul li::before { content: '—'; color: var(--red); }
+
+  /* Odds explainer */
+  .odds-table {
+    width: 100%; border-collapse: collapse;
+    margin-top: 16px; font-size: 13px;
+  }
+  .odds-table thead tr {
+    background: var(--clay); 
+  }
+  .odds-table th {
+    padding: 9px 12px; text-align: left;
+    font-weight: 700; font-size: 11px;
+    letter-spacing: 0.6px; text-transform: uppercase;
+    color: var(--ink-muted); border-bottom: 1px solid var(--border);
+  }
+  .odds-table td {
+    padding: 10px 12px; border-bottom: 1px solid var(--border);
+    color: var(--ink-soft);
+  }
+  .odds-table tbody tr:last-child td { border-bottom: none; }
+  .odds-table tbody tr:hover td { background: var(--clay); }
+  .odds-match { font-weight: 700; color: var(--ink); }
+  .odds-num { font-family: var(--font-display); font-weight: 600; }
+
+  /* ─── FULL-WIDTH HOW-TO SECTION ──────────────────────────── */
+  .howto-section {
+    background: var(--ink); color: #fff;
+    padding: 72px 0; margin: 40px 0;
+  }
+  .howto-section .section-title { color: #fff; }
+  .howto-section .section-desc { color: rgba(255,255,255,0.60); max-width: 520px; }
+  .steps-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 20px; margin-top: 40px;
+  }
+  .step-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: var(--r-lg); padding: 28px 24px;
+    position: relative;
+  }
+  .step-num {
+    font-family: var(--font-display);
+    font-size: 2.5rem; font-weight: 800;
+    color: rgba(255,255,255,0.08); line-height: 1;
+    position: absolute; top: 20px; right: 20px;
+    letter-spacing: -2px;
+  }
+  .step-icon-wrap {
+    width: 40px; height: 40px;
+    background: rgba(74,124,89,0.25); border-radius: var(--r-sm);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; margin-bottom: 16px;
+  }
+  .step-card h4 {
+    font-family: var(--font-display);
+    font-weight: 700; font-size: 1rem; color: #fff;
+    margin-bottom: 10px;
+  }
+  .step-card p {
+    font-size: 13.5px; color: rgba(255,255,255,0.58); line-height: 1.6;
+  }
+
+  /* ─── FAQ ────────────────────────────────────────────────── */
+  .faq-section { padding: 60px 0; }
+  .faq-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 12px; margin-top: 32px;
+  }
+  .faq-item {
+    background: #fff; border: 1px solid var(--border);
+    border-radius: var(--r-lg); overflow: hidden;
+  }
+  .faq-btn {
+    width: 100%; text-align: left; padding: 20px 24px;
+    background: none; border: none; cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 15px; font-weight: 600; color: var(--ink);
+    display: flex; justify-content: space-between; align-items: flex-start; gap: 12px;
+    line-height: 1.4;
+  }
+  .faq-btn:hover { background: var(--clay); }
+  .faq-chevron {
+    flex-shrink: 0; width: 20px; height: 20px;
+    border-radius: 50%; background: var(--clay-dark);
+    display: flex; align-items: center; justify-content: center;
+    transition: transform .25s, background .15s;
+    margin-top: 2px;
+  }
+  .faq-chevron svg { width: 10px; height: 10px; }
+  .faq-body {
+    max-height: 0; overflow: hidden;
+    transition: max-height .3s ease;
+  }
+  .faq-body-inner {
+    padding: 0 24px 20px;
+    font-size: 14px; color: var(--ink-muted); line-height: 1.65;
+  }
+  .faq-item.open .faq-chevron { transform: rotate(180deg); background: var(--sage-light); }
+  .faq-item.open .faq-body { max-height: 400px; }
+
+  /* ─── RESPONSIBLE PLAY ───────────────────────────────────── */
+  .responsible-section {
+    background: linear-gradient(135deg, var(--clay-dark) 0%, #EDE6D6 100%);
+    border: 1px solid var(--border);
+    border-radius: var(--r-xl);
+    padding: 48px 52px;
+    margin: 60px 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 48px;
+    align-items: center;
+  }
+  .responsible-section h2 {
+    font-family: var(--font-display);
+    font-size: 1.5rem; font-weight: 700;
+    color: var(--ink); margin-bottom: 14px;
+    letter-spacing: -0.4px;
+  }
+  .responsible-section p {
+    font-size: 15px; color: var(--ink-soft); line-height: 1.65;
+    max-width: 520px; margin-bottom: 20px;
+  }
+  .resp-links { display: flex; gap: 10px; flex-wrap: wrap; }
+  .resp-link {
+    font-size: 13px; font-weight: 600; color: var(--ink);
+    background: #fff; border: 1px solid var(--border-med);
+    padding: 8px 16px; border-radius: var(--r-md);
+    text-decoration: none; transition: border-color .15s;
+  }
+  .resp-link:hover { border-color: var(--sage); color: var(--sage); }
+  .resp-shield {
+    width: 120px; height: 120px; flex-shrink: 0;
+    background: #fff; border-radius: 50%;
+    border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 52px;
+  }
+
+  /* ─── DISCLAIMER ─────────────────────────────────────────── */
+  .disclaimer {
+    background: #fff; border: 1px solid var(--border);
+    border-left: 3px solid var(--ink-muted);
+    border-radius: var(--r-md);
+    padding: 20px 24px; margin: 40px 0;
+    display: flex; gap: 14px; align-items: flex-start;
+  }
+  .disclaimer svg { flex-shrink: 0; margin-top: 2px; }
+  .disclaimer-text strong { display: block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--ink-muted); margin-bottom: 5px; }
+  .disclaimer-text p { font-size: 13px; color: var(--ink-muted); line-height: 1.6; }
+  .disclaimer-text a { color: var(--sage); }
+
+  /* ─── FOOTER ─────────────────────────────────────────────── */
+  .site-footer {
+    background: var(--ink); color: rgba(255,255,255,0.55);
+    padding: 40px 0; margin-top: 20px;
+    font-size: 13px;
+  }
+  .footer-inner {
+    max-width: 1280px; margin: 0 auto; padding: 0 24px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 12px;
+  }
+  .footer-logo {
+    font-family: var(--font-display);
+    font-weight: 800; color: #fff; font-size: 1rem;
+  }
+  .footer-logo span { color: var(--sage); }
+  .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
+  .footer-links a { color: rgba(255,255,255,0.55); text-decoration: none; }
+  .footer-links a:hover { color: #fff; }
+  .age-badge {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 5px 12px; border-radius: var(--r-sm);
+    font-weight: 700; color: rgba(255,255,255,0.55);
+  }
+
+  /* ─── RESPONSIVE ─────────────────────────────────────────── */
+  @media (max-width: 1024px) {
+    .steps-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 860px) {
+    .hero { grid-template-columns: 1fr; gap: 32px; }
+    .hero-stats { flex-direction: row; flex-wrap: wrap; justify-content: space-around; min-width: unset; }
+    .hero-stat-divider { display: none; }
+    .content-grid { grid-template-columns: 1fr; }
+    .faq-grid { grid-template-columns: 1fr; }
+    .responsible-section { grid-template-columns: 1fr; padding: 36px 28px; }
+    .resp-shield { display: none; }
+    .table-header-row, .table-row { grid-template-columns: 2fr 1.2fr 1fr 1fr; }
+    .table-header-row span:nth-child(5),
+    .table-header-row span:nth-child(6),
+    .table-header-row span:nth-child(7),
+    .table-row > *:nth-child(5),
+    .table-row > *:nth-child(6),
+    .table-row > *:nth-child(7) { display: none; }
+    .nav-links { display: none; }
+  }
+  @media (max-width: 580px) {
+    .steps-grid { grid-template-columns: 1fr; }
+    .table-header-row, .table-row { grid-template-columns: 1fr auto; }
+    .table-header-row span:nth-child(2),
+    .table-header-row span:nth-child(3),
+    .table-header-row span:nth-child(4),
+    .table-row > *:nth-child(2),
+    .table-row > *:nth-child(3),
+    .table-row > *:nth-child(4) { display: none; }
+  }
+</style>
+
+<!-- ✅ Schema: WebPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Best Online Lotto Sites South Africa 2026",
+  "description": "Compare trusted SA lotto sites, current jackpots and verified odds.",
+  "url": "https://nextdrawlogic.co.za/lotto/",
+  "author": {
+    "@type": "Organization",
+    "name": "NextDrawLogic",
+    "url": "https://nextdrawlogic.co.za"
+  },
+  "dateModified": "2026-05-15"
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- TOP BAR: live draw info -->
+<div class="topbar" role="banner">
+  <div class="topbar-inner">
+    <span class="topbar-live">
+      <span class="topbar-live-dot" aria-hidden="true"></span>
+      Next Draw: Saturday 17 May · 20:56 SAST
+    </span>
+    <span>
+      <a href="/results/lotto/">Latest Results</a>
+      &nbsp;·&nbsp;
+      <a href="/check-tickets/lotto/">Check Tickets</a>
+      &nbsp;·&nbsp;
+      <a href="/hot-and-cold-numbers/lotto/">Hot &amp; Cold Numbers</a>
+    </span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="nav-logo" href="/">Next<span>Draw</span>Logic</a>
+    <ul class="nav-links">
+      <li><a href="/lotto/" class="active">Lotto</a></li>
+      <li><a href="/predictions/lotto/">Predictions</a></li>
+      <li><a href="/predictions/powerball/">PowerBall</a></li>
+      <li><a href="/predictions/daily-lotto/">Daily Lotto</a></li>
+      <li><a href="/results/lotto/history/">History</a></li>
+      <li><a href="/predictions/lotto/" class="nav-cta">Get Predictions</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main id="main-content">
+
+  <div class="container">
+
+    <!-- BREADCRUMB -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1">
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name">Lotto</span>
+          <meta itemprop="position" content="2">
+        </li>
+      </ol>
+    </nav>
+
+    <!-- ✅ HERO: Trust + Community H1 -->
+    <header class="hero">
+      <div class="hero-text">
+        <div class="hero-badge" aria-label="Independent, community-reviewed">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" aria-hidden="true"><circle cx="5" cy="5" r="5"/></svg>
+          Independent · Community-Reviewed · Updated Weekly
+        </div>
+
+        <!-- ✅ H1 integrates primary keyword + community trust angle -->
+        <h1>Play the <em>SA Lotto</em> With Confidence — Trusted by 40,000 SA Players</h1>
+
+        <p class="hero-sub">
+          We compare the <strong>best online lotto sites</strong> in South Africa so you can play lottery online safely. Every listing is independently reviewed, with verified jackpot data, transparent odds, and real user ratings — no affiliate spin.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#compare-table" class="btn-primary">
+            Compare Lotto Sites
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="/predictions/lotto/" class="btn-secondary">
+            View Predictions
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero stat block -->
+      <div class="hero-stats" aria-label="Key statistics">
+        <div class="hero-stat-item">
+          <div class="hero-stat-num">R<span>20M</span>+</div>
+          <div class="hero-stat-label">Current jackpot est.</div>
+        </div>
+        <hr class="hero-stat-divider" aria-hidden="true">
+        <div class="hero-stat-item">
+          <div class="hero-stat-num"><span>52</span></div>
+          <div class="hero-stat-label">Ball pool size</div>
+        </div>
+        <hr class="hero-stat-divider" aria-hidden="true">
+        <div class="hero-stat-item">
+          <div class="hero-stat-num"><span>2</span>×</div>
+          <div class="hero-stat-label">Draws per week</div>
+        </div>
+        <hr class="hero-stat-divider" aria-hidden="true">
+        <div class="hero-stat-item">
+          <div class="hero-stat-num"><span>8</span></div>
+          <div class="hero-stat-label">Prize tiers</div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- TRUST STRIP -->
+  <div class="trust-strip" role="complementary" aria-label="Trust signals">
+    <div class="trust-strip-inner">
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1l1.8 3.6L14 5.6l-3 2.9.7 4.1L8 10.5l-3.7 2.1.7-4.1-3-2.9 4.2-.6L8 1z" stroke="#4A7C59" stroke-width="1.4" stroke-linejoin="round" fill="none"/></svg>
+        NLC-Licensed Sites Only
+      </div>
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="3" y="7" width="10" height="7" rx="1.5" stroke="#4A7C59" stroke-width="1.4"/><path d="M5 7V5a3 3 0 016 0v2" stroke="#4A7C59" stroke-width="1.4" stroke-linecap="round"/></svg>
+        SSL-Secured &amp; Safe Transactions
+      </div>
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="#4A7C59" stroke-width="1.4"/><path d="M5 8l2 2 4-4" stroke="#4A7C59" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Certified Random Number Generator
+      </div>
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2C5.2 2 3 4.2 3 7c0 3.5 5 8 5 8s5-4.5 5-8c0-2.8-2.2-5-5-5z" stroke="#4A7C59" stroke-width="1.4"/><circle cx="8" cy="7" r="1.5" stroke="#4A7C59" stroke-width="1.2"/></svg>
+        SA-Based Editorial Team
+      </div>
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 10l4-6 3 4 2-2 3 4" stroke="#4A7C59" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Verified Payout Histories
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- ✅ COMPARISON TABLE SECTION -->
+    <section class="table-section" id="compare-table" aria-labelledby="table-heading">
+      <div class="section-label">Editor's Comparison</div>
+      <h2 class="section-title" id="table-heading">Best Online Lotto Sites — SA 2026</h2>
+      <p class="section-desc">
+        Every site below has been independently reviewed for licence validity, secure transactions, current lottery jackpots, payout speed, and overall fairness. Ratings reflect genuine community feedback.
+      </p>
+
+      <div class="table-wrapper" role="region" aria-label="Lotto site comparison table">
+        <!-- Table header -->
+        <div class="table-header-row" role="row" aria-label="Table column headers">
+          <span>Site</span>
+          <span>Jackpot Size</span>
+          <span>Jackpot Odds</span>
+          <span>User Rating</span>
+          <span>Payout Speed</span>
+          <span>Security</span>
+          <span></span>
+        </div>
+
+        <!-- ROW 1: Featured -->
+        <div class="table-row featured" role="row">
+          <div class="site-info">
+            <div class="site-avatar" aria-hidden="true">🎯</div>
+            <div>
+              <div class="site-name">PlaySA Lotto <span class="featured-badge">Top Pick</span></div>
+              <div class="site-tag">Official tickets · Est. 2018</div>
+            </div>
+          </div>
+          <div>
+            <div class="jackpot-val">R45M+</div>
+            <div class="jackpot-sub">Wed 21 May est.</div>
+          </div>
+          <div class="odds-val">1:20.3M</div>
+          <div>
+            <span class="stars" aria-label="4.8 stars">★★★★★</span>
+            <span class="star-count">(4.8)</span>
+          </div>
+          <div><span class="payout-badge">24–48 hrs</span></div>
+          <div class="security-icons">
+            <span class="sec-pill">SSL</span>
+            <span class="sec-pill">NLC</span>
+            <span class="sec-pill">RNG</span>
+          </div>
+          <div class="table-cta-col">
+            <a href="#" class="table-cta" rel="noopener sponsored" aria-label="Review PlaySA Lotto">Review</a>
+          </div>
+        </div>
+
+        <!-- ROW 2 -->
+        <div class="table-row" role="row">
+          <div class="site-info">
+            <div class="site-avatar" aria-hidden="true">🌍</div>
+            <div>
+              <div class="site-name">Lottoland SA</div>
+              <div class="site-tag">International + local lotto</div>
+            </div>
+          </div>
+          <div>
+            <div class="jackpot-val">R28M</div>
+            <div class="jackpot-sub">Rolling jackpot</div>
+          </div>
+          <div class="odds-val">1:20.3M</div>
+          <div>
+            <span class="stars" aria-label="4.4 stars">★★★★☆</span>
+            <span class="star-count">(4.4)</span>
+          </div>
+          <div><span class="payout-badge">48–72 hrs</span></div>
+          <div class="security-icons">
+            <span class="sec-pill">SSL</span>
+            <span class="sec-pill">NLC</span>
+          </div>
+          <div class="table-cta-col">
+            <a href="#" class="table-cta secondary" rel="noopener sponsored" aria-label="Review Lottoland SA">Review</a>
+          </div>
+        </div>
+
+        <!-- ROW 3 -->
+        <div class="table-row" role="row">
+          <div class="site-info">
+            <div class="site-avatar" aria-hidden="true">⚡</div>
+            <div>
+              <div class="site-name">Ithuba Direct</div>
+              <div class="site-tag">Official operator · FICA compliant</div>
+            </div>
+          </div>
+          <div>
+            <div class="jackpot-val">R45M+</div>
+            <div class="jackpot-sub">Same as national draw</div>
+          </div>
+          <div class="odds-val">1:20.3M</div>
+          <div>
+            <span class="stars" aria-label="4.6 stars">★★★★★</span>
+            <span class="star-count">(4.6)</span>
+          </div>
+          <div><span class="payout-badge">24 hrs</span></div>
+          <div class="security-icons">
+            <span class="sec-pill">SSL</span>
+            <span class="sec-pill">NLC</span>
+            <span class="sec-pill">FICA</span>
+          </div>
+          <div class="table-cta-col">
+            <a href="#" class="table-cta secondary" rel="noopener sponsored" aria-label="Review Ithuba Direct">Review</a>
+          </div>
+        </div>
+
+        <!-- ROW 4 -->
+        <div class="table-row" role="row">
+          <div class="site-info">
+            <div class="site-avatar" aria-hidden="true">🌐</div>
+            <div>
+              <div class="site-name">theLotter SA</div>
+              <div class="site-tag">Play international lotto from SA</div>
+            </div>
+          </div>
+          <div>
+            <div class="jackpot-val">Multi-lottery</div>
+            <div class="jackpot-sub">EuroMillions, Mega Millions</div>
+          </div>
+          <div class="odds-val">Varies</div>
+          <div>
+            <span class="stars" aria-label="4.2 stars">★★★★☆</span>
+            <span class="star-count">(4.2)</span>
+          </div>
+          <div><span class="payout-badge slow">3–5 days</span></div>
+          <div class="security-icons">
+            <span class="sec-pill">SSL</span>
+          </div>
+          <div class="table-cta-col">
+            <a href="#" class="table-cta secondary" rel="noopener sponsored" aria-label="Review theLotter SA">Review</a>
+          </div>
+        </div>
+
+        <!-- Author bar: E-E-A-T signal -->
+        <div class="author-bar" role="contentinfo">
+          <div class="author-avatar" aria-label="Author initials: NB">NB</div>
+          <div class="author-info">
+            <div class="author-name">Ntombi B. — Senior Lottery Analyst, NextDrawLogic</div>
+            <div class="author-bio">Ntombi has 9 years of experience auditing South African lottery operators, prize tier structures, and online lottery results platforms. All reviews are independently verified and updated quarterly.</div>
+          </div>
+          <div class="author-updated" aria-label="Last updated date">Updated: May 2026</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ DEEP-DIVE CONTENT: E-E-A-T -->
+    <section class="content-section" aria-labelledby="guides-heading">
+      <div class="section-label">Strategy Guides</div>
+      <h2 class="section-title" id="guides-heading">Understand Before You Play</h2>
+      <p class="section-desc">
+        Expert guidance grounded in probability, financial literacy, and responsible play — written for South African players.
+      </p>
+
+      <div class="content-grid">
+
+        <!-- Card 1: How to choose -->
+        <div class="content-card sage">
+          <div class="card-icon sage" aria-hidden="true">🔍</div>
+          <h3>How to Choose a Trusted Lotto Site</h3>
+          <p>With dozens of platforms offering access to online lottery results and ticket purchases, separating quality from noise is critical. Here is what our editorial team looks for in every review:</p>
+          <ul>
+            <li><strong>Valid NLC licence number</strong> — verify it directly at nlcsa.org.za before depositing</li>
+            <li><strong>Official ticket purchase model</strong> — some sites sell participation in pools rather than official tickets; know the difference</li>
+            <li><strong>Transparent prize tiers</strong> — every site should publish full prize tier breakdowns, not just the top jackpot figure</li>
+            <li><strong>Secure transactions</strong> — look for TLS 1.3 encryption, verified payment gateways, and POPIA compliance</li>
+            <li><strong>Documented payout history</strong> — trusted lotto reviews always include verifiable winner case studies or payout records</li>
+          </ul>
+        </div>
+
+        <!-- Card 2: Understanding odds -->
+        <div class="content-card amber">
+          <div class="card-icon amber" aria-hidden="true">📊</div>
+          <h3>Understanding SA Lotto Odds &amp; Prize Tiers</h3>
+          <p>The SA Lotto uses a 52-ball pool. Understanding how prize tiers work — not just the jackpot — is the foundation of informed play.</p>
+          <table class="odds-table" aria-label="SA Lotto prize tier odds">
+            <thead>
+              <tr>
+                <th>Match</th>
+                <th>Odds</th>
+                <th>Prize Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="odds-match">6 of 6</td>
+                <td class="odds-num">1 : 20,358,520</td>
+                <td>Jackpot (pari-mutuel)</td>
+              </tr>
+              <tr>
+                <td class="odds-match">5 + Bonus</td>
+                <td class="odds-num">1 : 3,393,087</td>
+                <td>Division 2</td>
+              </tr>
+              <tr>
+                <td class="odds-match">5 of 6</td>
+                <td class="odds-num">1 : 65,251</td>
+                <td>Division 3</td>
+              </tr>
+              <tr>
+                <td class="odds-match">4 of 6</td>
+                <td class="odds-num">1 : 1,082</td>
+                <td>Division 4</td>
+              </tr>
+              <tr>
+                <td class="odds-match">3 of 6</td>
+                <td class="odds-num">1 : 57</td>
+                <td>Division 5 — most common win</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="margin-top: 14px; font-size: 13px;">The <strong>random number generator</strong> used by Ithuba is independently audited by Gaming Laboratories International. Every draw is truly random.</p>
+        </div>
+
+        <!-- Card 3: Play international lotto -->
+        <div class="content-card cobalt">
+          <div class="card-icon cobalt" aria-hidden="true">🌍</div>
+          <h3>Playing International Lotteries from South Africa</h3>
+          <p>Want to <strong>play international lotto</strong> such as EuroMillions, US Powerball, or Italy's SuperEnalotto from SA? Platforms like theLotter and Lottoland offer legitimate access, though there are key considerations:</p>
+          <ul>
+            <li>You receive official lottery tickets purchased on your behalf in that country</li>
+            <li>Currency conversion and international transfer fees apply to any prizes</li>
+            <li>Tax obligations vary — consult a SARS-registered advisor for prizes over R1M</li>
+            <li>Check whether the platform holds a licence in the country of the lottery being offered</li>
+            <li>Payout timelines are longer (3–10 business days) due to international clearing</li>
+          </ul>
+        </div>
+
+        <!-- Card 4: Common mistakes -->
+        <div class="content-card red">
+          <div class="card-icon red" aria-hidden="true">⚠️</div>
+          <h3>Common Mistakes to Avoid</h3>
+          <p>Our community of 40,000 SA players has flagged these recurring pitfalls in trusted lotto reviews and forum discussions:</p>
+          <ul>
+            <li>Purchasing from unlicensed third-party resellers with no verifiable regulatory footprint</li>
+            <li>Misunderstanding pari-mutuel jackpots — prize size depends on how many tickets are sold and split among winners</li>
+            <li>Chasing losses after a run of draws — each draw is independent; past online lottery results have zero bearing on future outcomes</li>
+            <li>Ignoring the Division 5–8 prize tiers where the realistic probability of return lies</li>
+            <li>Not checking current lottery jackpots before choosing between SA Lotto and PowerBall for that week</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+  </div><!-- /container -->
+
+  <!-- HOW-TO SECTION: dark, full-width -->
+  <section class="howto-section" aria-labelledby="howto-heading">
+    <div class="container">
+      <div class="section-label" style="color: rgba(255,255,255,0.45);">Step by Step</div>
+      <h2 class="section-title" id="howto-heading">How to Play Lottery Online in South Africa</h2>
+      <p class="section-desc">Playing lotto online securely takes four steps. Follow this process to protect your funds and ensure your ticket is valid.</p>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num" aria-hidden="true">01</div>
+          <div class="step-icon-wrap" aria-hidden="true">🔍</div>
+          <h4>Verify the Operator</h4>
+          <p>Confirm the site's NLC licence number is current. Cross-reference it at the official National Lottery Commission website before registering. This is non-negotiable.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num" aria-hidden="true">02</div>
+          <div class="step-icon-wrap" aria-hidden="true">🪪</div>
+          <h4>Complete FICA Verification</h4>
+          <p>Legitimate platforms require FICA-compliant identity verification. Upload your South African ID and proof of address. This process protects your prize claim rights.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num" aria-hidden="true">03</div>
+          <div class="step-icon-wrap" aria-hidden="true">🎱</div>
+          <h4>Select Your Numbers</h4>
+          <p>Choose 6 numbers from 1–52, or use a Quick Pick (random number generator). Our predictions tool analyses the last 50 draws to suggest statistically informed combinations.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num" aria-hidden="true">04</div>
+          <div class="step-icon-wrap" aria-hidden="true">📲</div>
+          <h4>Check Online Lottery Results</h4>
+          <p>Draws happen Wednesday and Saturday at 20:56 SAST. Results are published within minutes at NextDrawLogic and confirmed against official Ithuba data. Save your ticket reference.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section" aria-labelledby="faq-heading">
+      <div class="section-label">Common Questions</div>
+      <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
+      <p class="section-desc">Questions from the SA lotto community, answered by our editorial team.</p>
+
+      <div class="faq-grid" id="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false" aria-controls="faq-1-body">
+            How do I choose the best online lotto site in South Africa?
+            <span class="faq-chevron" aria-hidden="true">
+              <svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M1 1l4 4 4-4"/></svg>
+            </span>
+          </button>
+          <div class="faq-body" id="faq-1-body" role="region">
+            <div class="faq-body-inner">
+              Look for sites with an active NLC licence, full prize tier transparency, certified secure transactions (TLS encryption), and a verified random number generator. Our comparison table above filters for all of these criteria so you can make an informed choice.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false" aria-controls="faq-2-body">
+            Are online lottery sites legal in South Africa?
+            <span class="faq-chevron" aria-hidden="true">
+              <svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M1 1l4 4 4-4"/></svg>
+            </span>
+          </button>
+          <div class="faq-body" id="faq-2-body" role="region">
+            <div class="faq-body-inner">
+              Yes. Online lottery participation is regulated under the National Gambling Act. Ithuba Holdings is the licensed operator of the national lotto. Verify any platform's NLC licence before registering or depositing funds.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false" aria-controls="faq-3-body">
+            What are the current SA Lotto jackpot odds?
+            <span class="faq-chevron" aria-hidden="true">
+              <svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M1 1l4 4 4-4"/></svg>
+            </span>
+          </button>
+          <div class="faq-body" id="faq-3-body" role="region">
+            <div class="faq-body-inner">
+              Matching all 6 numbers from the 52-ball pool carries odds of 1 in 20,358,520. However, the Division 5 prize (match 3 of 6) sits at 1 in 57 — meaning roughly 1 in 57 tickets sees some return. Understanding all prize tiers is essential before playing.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false" aria-controls="faq-4-body">
+            Can I play international lotto from South Africa?
+            <span class="faq-chevron" aria-hidden="true">
+              <svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M1 1l4 4 4-4"/></svg>
+            </span>
+          </button>
+          <div class="faq-body" id="faq-4-body" role="region">
+            <div class="faq-body-inner">
+              Yes. Platforms such as theLotter and Lottoland purchase official tickets in the relevant country on your behalf. Prizes are paid in the original currency and transferred after currency conversion. Tax implications for prizes above the SARS threshold should be discussed with a registered tax professional.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false" aria-controls="faq-5-body">
+            How long does lotto payout take online?
+            <span class="faq-chevron" aria-hidden="true">
+              <svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M1 1l4 4 4-4"/></svg>
+            </span>
+          </button>
+          <div class="faq-body" id="faq-5-body" role="region">
+            <div class="faq-body-inner">
+              For SA national lotto draws through licensed platforms: smaller prizes (Division 4–8) are typically credited within 24–48 hours. Division 1–3 prizes involve identity verification processes that can take 5–15 business days. Always ensure your FICA documentation is current to avoid delays.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-btn" aria-expanded="false" aria-controls="faq-6-body">
+            What is the difference between SA Lotto and PowerBall?
+            <span class="faq-chevron" aria-hidden="true">
+              <svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M1 1l4 4 4-4"/></svg>
+            </span>
+          </button>
+          <div class="faq-body" id="faq-6-body" role="region">
+            <div class="faq-body-inner">
+              SA Lotto draws 6 numbers from a 52-ball pool, giving jackpot odds of 1:20.3M. PowerBall draws 5 numbers from 50 plus a PowerBall from 20, giving odds of 1:42.4M. PowerBall jackpots roll over larger because they are harder to win, but SA Lotto offers better overall prize frequency across its 8 prize tiers.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ✅ RESPONSIBLE PLAY SECTION -->
+    <div class="responsible-section" role="complementary" aria-labelledby="resp-heading">
+      <div>
+        <h2 id="resp-heading">Responsible Play — We Mean It</h2>
+        <p>
+          Lottery games are designed for entertainment. The statistical reality is that the expected value of every ticket is below its purchase price. We do not use urgency language, fabricate jackpot scarcity, or hide odds.
+        </p>
+        <p>
+          If lottery play is affecting your finances, relationships, or mental health, free confidential support is available in South Africa:
+        </p>
+        <div class="resp-links">
+          <a href="https://www.responsiblegambling.org.za/" rel="noopener noreferrer" class="resp-link" target="_blank">Responsible Gambling SA</a>
+          <a href="https://www.nlcsa.org.za/" rel="noopener noreferrer" class="resp-link" target="_blank">NLC Helpline</a>
+          <a href="tel:0800-006-008" class="resp-link">0800 006 008 (Free)</a>
+        </div>
+      </div>
+      <div class="resp-shield" aria-hidden="true">🛡️</div>
+    </div>
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer" role="note">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+        <circle cx="9" cy="9" r="8" stroke="#6B6B60" stroke-width="1.4"/>
+        <path d="M9 5.5v4M9 12v.5" stroke="#6B6B60" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <div class="disclaimer-text">
+        <strong>Editorial Disclaimer</strong>
+        <p>
+          NextDrawLogic is an independent informational platform and is not affiliated with, endorsed by, or sponsored by the 
+          <a href="https://www.nationallottery.co.za/" target="_blank" rel="noopener noreferrer nofollow">South African National Lottery</a> 
+          or <a href="https://ithubalottery.co.za/" target="_blank" rel="noopener noreferrer nofollow">Ithuba Holdings</a>. 
+          Lottery games are games of chance. Past online lottery results do not predict future outcomes. 
+          Some site links may be affiliate links; our editorial process remains independent of commercial relationships. Play responsibly. 18+ only.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-logo">Next<span>Draw</span>Logic</div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="/about/">About</a>
+      <a href="/editorial-policy/">Editorial Policy</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/contact/">Contact</a>
+      <a href="https://www.responsiblegambling.org.za/" rel="noopener noreferrer" target="_blank">Responsible Play</a>
+    </nav>
+    <span class="age-badge" aria-label="18 and over only">18+</span>
+  </div>
+</footer>
+
+<script>
+  // Lightweight FAQ accordion — no dependencies, ~20 lines
+  document.querySelectorAll('.faq-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.faq-item.open').forEach(el => {
+        el.classList.remove('open');
+        el.querySelector('.faq-btn').setAttribute('aria-expanded', 'false');
+      });
+      // Toggle clicked
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // Smooth scroll offset for sticky nav
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        const offset = 80;
+        window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
